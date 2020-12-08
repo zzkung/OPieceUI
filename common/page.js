@@ -3,7 +3,7 @@ export default function(options = {}) {
     onShareAppMessage() {
       console.log('page.js')
       return {
-        title: 'jMeiiUI 组件库'
+        title: 'jMeii UI 组件库'
       }
     },
     ...options

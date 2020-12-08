@@ -1,11 +1,11 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/dashboard/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "jMeiiUI",
+    "navigationBarTitleText": "jMeii UI",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",

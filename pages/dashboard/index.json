@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "jMeii UI",
+  "usingComponents": {
+    "demo-home": "../../components/demo-home/index"
+  }
+}

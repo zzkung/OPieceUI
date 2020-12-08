@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -40,8 +40,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
-  "appid": "wx3c28b0e985342609",
-  "projectname": "jMeiiUI",
+  "appid": "wxa1afff41f4458cd3",
+  "projectname": "jMeii UI",
   "debugOptions": {
     "hidedInDevtools": []
   },

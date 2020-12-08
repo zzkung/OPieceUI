@@ -1,7 +1,9 @@
-import list from '../../config';
+import list from '../../config'
+const app = getApp()
 
 Component({
   data: {
     list,
+    imghttp: app.globalData.imghttp
   },
 });
