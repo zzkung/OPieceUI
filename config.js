@@ -7,10 +7,6 @@ export default [
       {
         path: '/icon',
         title: 'Icon 图标',
-      },
-      {
-        path: '/cell',
-        title: 'Cell 单元格',
       }
     ],
   },
@@ -19,12 +15,8 @@ export default [
     icon: 'ellipsis',
     list: [
       {
-        path: '/area',
-        title: 'Area 省市区选择',
-      },
-      {
-        path: '/card',
-        title: 'Card 商品卡片',
+        path: '/refresh-scroll',
+        title: 'RefreshScroll 下拉刷新，上拉加载',
       }
     ],
   },

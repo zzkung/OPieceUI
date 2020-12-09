@@ -9,10 +9,6 @@
       {
         "type": "folder",
         "value": "docs"
-      },
-      {
-        "type": "folder",
-        "value": "dist"
       }
     ]
   },
@@ -77,6 +73,12 @@
         {
           "name": "Icon 图标",
           "pathName": "pages/icon/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "RefreshScroll 下拉刷新，上拉加载",
+          "pathName": "pages/refresh-scroll/index",
           "scene": null
         }
       ]

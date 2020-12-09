@@ -1,0 +1,4 @@
+<view class="custom-class demo-param {{ padding ? 'demo-param--padding' : '' }}">
+  <view wx:if="{{ title }}" class="demo-param__title">{{ title }}</view>
+  <slot />
+</view>

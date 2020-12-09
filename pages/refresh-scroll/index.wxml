@@ -1,0 +1,33 @@
+<demo-block>
+  <refresh-scroll requesting="{{requesting}}"
+    end="{{end}}"
+    enable-back-to-top="{{true}}"
+    empty-show="{{emptyShow}}"
+    list-count="{{listData.length}}"
+    bottom-size="{{54}}"
+    info-text="{{infoText}}"
+    bind:refresh="refresh"
+    bind:more="more"
+  >
+    <view slot="content" class="cells">
+      <view class="cell"
+        wx:for="{{listData}}"
+        wx:key="index"
+        bindtap="itemClick"
+      >
+        <view class="cell__hd">
+          <image mode="aspectFill" src="{{item.images}}" alt=""/>
+        </view>
+        <view class="cell__bd">
+          <view class="name">{{item.title}}</view>
+          <view class="des">{{item.description}}</view>
+        </view>
+      </view>
+    </view>
+
+  </refresh-scroll>
+</demo-block>
+
+<demo-param custom-class="custom-param" title="参数配置">
+
+</demo-param>

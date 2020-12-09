@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/dashboard/index",
-    "pages/icon/index"
+    "pages/icon/index",
+    "pages/refresh-scroll/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,7 +11,9 @@
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {
-    "demo-block": "./components/demo-block/index"
+    "demo-block": "./components/demo-block/index",
+    "demo-param": "./components/demo-param/index",
+    "refresh-scroll": "./dist/refresh-scroll/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
