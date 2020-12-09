@@ -1,3 +1,47 @@
-<demo-block title="基础用法">
-  <text class="jmIcon jmIcon-success-o"></text>
+<demo-block
+  title="{{icons.basic.name}}"
+>
+  <view class="flex align-center padding-lr-30">
+    <view
+      class="icon-item text-center"
+      wx:for="{{icons.basic.list}}"
+      wx:key="index"
+    >
+      <text class="jmIcon jmIcon-{{item}} text-64"
+      ></text>
+      <view class="text-28">{{item}}</view>
+    </view>
+  </view>
+</demo-block>
+
+<demo-block
+  title="{{icons.outline.name}}"
+>
+  <view class="flex align-center padding-lr-30">
+    <view
+      class="icon-item text-center"
+      wx:for="{{icons.outline.list}}"
+      wx:key="index"
+    >
+      <text class="jmIcon jmIcon-{{item}} text-64"
+      ></text>
+      <view class="text-28">{{item}}</view>
+    </view>
+  </view>
+</demo-block>
+
+<demo-block
+  title="{{icons.filled.name}}"
+>
+  <view class="flex align-center padding-lr-30">
+    <view
+      class="icon-item text-center"
+      wx:for="{{icons.filled.list}}"
+      wx:key="index"
+    >
+      <text class="jmIcon jmIcon-{{item}} text-64"
+      ></text>
+      <view class="text-28">{{item}}</view>
+    </view>
+  </view>
 </demo-block>

@@ -10,6 +10,7 @@
 .jmIcon {
   font-weight: 400;
   font-family: "jmIcon" !important;
+	font-size: inherit;
   font-style: normal;
   font-display: auto;
   -webkit-font-smoothing: antialiased;
