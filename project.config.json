@@ -1,7 +1,20 @@
 {
   "description": "项目配置文件",
   "packOptions": {
-    "ignore": []
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "sourse"
+      },
+      {
+        "type": "folder",
+        "value": "docs"
+      },
+      {
+        "type": "folder",
+        "value": "dist"
+      }
+    ]
   },
   "setting": {
     "urlCheck": true,

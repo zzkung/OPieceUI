@@ -1,0 +1,58 @@
+{
+  "id": "2257746",
+  "name": "jMeii UI",
+  "font_family": "jmIcon",
+  "css_prefix_text": "jmIcon-",
+  "description": "jMeii UI 组件库图标",
+  "glyphs": [
+    {
+      "icon_id": "11372639",
+      "name": "爱心",
+      "font_class": "like-o",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    },
+    {
+      "icon_id": "11372648",
+      "name": "成功",
+      "font_class": "success-o",
+      "unicode": "e8ad",
+      "unicode_decimal": 59565
+    },
+    {
+      "icon_id": "11372659",
+      "name": "更多",
+      "font_class": "more",
+      "unicode": "e8af",
+      "unicode_decimal": 59567
+    },
+    {
+      "icon_id": "11372756",
+      "name": "爱心",
+      "font_class": "like",
+      "unicode": "e8c3",
+      "unicode_decimal": 59587
+    },
+    {
+      "icon_id": "11372757",
+      "name": "成功",
+      "font_class": "success",
+      "unicode": "e8c4",
+      "unicode_decimal": 59588
+    },
+    {
+      "icon_id": "11372666",
+      "name": "分享",
+      "font_class": "share",
+      "unicode": "e8b0",
+      "unicode_decimal": 59568
+    },
+    {
+      "icon_id": "11372693",
+      "name": "删除",
+      "font_class": "delete",
+      "unicode": "e8b6",
+      "unicode_decimal": 59574
+    }
+  ]
+}

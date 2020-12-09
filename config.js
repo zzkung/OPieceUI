@@ -1,11 +1,12 @@
+// 首页配置
 export default [
   {
     groupName: '基础组件',
     icon: '',
     list: [
       {
-        path: '/button',
-        title: 'Button 按钮',
+        path: '/icon',
+        title: 'Icon 图标',
       },
       {
         path: '/cell',
