@@ -1,0 +1,58 @@
+<wxs src="../util.wxs" module="computed"></wxs>
+
+<view class="vtabs">
+  <view class="vtabs-bar__wrp {{tabBarClass}}" style="width: {{computed.addUtil(tabBarWidth)}};">
+    <scroll-view 
+      scroll-y
+      class="vtabs-bar__scrollview"
+      scroll-into-view="vtabs-item__{{currentView}}"
+    >
+      <view class="vtabs-bar__content" style="width: {{computed.addUtil(tabBarWidth)}};">
+        <block wx:for="{{vtabs}}" wx:key="title">
+          <view 
+            id="vtabs-item__{{index}}"
+            class="vtabs-bar__item"
+            data-index="{{index}}"
+            style="width: {{computed.addUtil(tabBarWidth)}};background-color: {{activeTab === index ? tabBarActiveBgColor : tabBarInactiveBgColor}}; color: {{activeTab === index ? tabBarActiveTextColor : tabBarInactiveTextColor}}; border-left-color: {{activeTab === index ? tabBarLineColor : tabBarInactiveBgColor}}"
+            bindtap="handleTabClick"
+          >
+            <view class="vtabs-bar__title {{activeTab === index ? activeClass : ''}}">
+              <text class="vtabs-bar__text">{{item.title}}
+                <text class="vtabs-bar__count" wx:if="{{allData[index].sortcount > 0}}">{{allData[index].sortcount}}</text>
+              </text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="vtabs-content__wrp">
+    <scroll-view 
+      scroll-y
+      class="vtabs-content__scrollview" 
+      scroll-top="{{contentScrollTop}}"
+      scroll-with-animation="{{animation}}" 
+      refresher-enabled="{{activeTab != 0 ? true : false}}"
+      refresher-default-style="none"
+      refresher-threshold="{{refreshThreshold}}"
+      refresher-background="#fff"
+      refresher-triggered="{{refresherStatus}}"
+      lower-threshold="{{lowerThreshold}}"
+      bindscroll="handleContentScroll"
+      bindrefresherpulling="handleRefresherPulling"
+      bindrefresherrefresh="handleContentRefresherRefresh"
+    >
+      <view wx:if="{{activeTab != 0}}" slot="refresher" class="_refresh-header" style="height:{{refreshThreshold}}px;">
+        <image class="_refresh-icon" src="{{refreshIcon}}"></image>
+        <view class="_refresh-content">下拉继续浏览 {{pullupTitle}}</view>
+      </view>
+      <view class="vtabs-content" style="background:{{contentBgColor}}">
+        <slot></slot>
+      </view>
+      <!-- <view wx:if="{{activeTab != vtabs.length - 1}}" class="_pull-more" bindtap="handleContentTolower">
+        <image class="_pull-icon" src="{{pullIcon}}"></image>
+        <view class="_pull-more__text">点击继续浏览 {{pulldownTitle}}</view>
+      </view> -->
+    </scroll-view>
+  </view>
+</view>

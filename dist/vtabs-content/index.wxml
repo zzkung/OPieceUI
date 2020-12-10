@@ -1,0 +1,3 @@
+<view class="vtabs-content__item" id="vtabs-content__{{tabIndex}}">
+  <slot></slot>
+</view>

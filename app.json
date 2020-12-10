@@ -2,7 +2,8 @@
   "pages":[
     "pages/dashboard/index",
     "pages/icon/index",
-    "pages/refresh-scroll/index"
+    "pages/refresh-scroll/index",
+    "pages/vtabs/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

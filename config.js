@@ -17,6 +17,9 @@ export default [
       {
         path: '/refresh-scroll',
         title: 'RefreshScroll 下拉刷新，上拉加载',
+      }, {
+        path: '/vtabs',
+        title: 'vtabs 纵向选项卡',
       }
     ],
   },
