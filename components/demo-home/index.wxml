@@ -3,10 +3,10 @@
     class="demo-home__title"
   >
     <image mode="aspectFit" class="demo-home__image" src="{{imghttp}}/logo.png" />
-    <view class="demo-home__text">jMeii UI</view>
+    <view class="demo-home__text">OPiece UI</view>
   </view>
   <view class="demo-home__desc">
-    简美小程序 UI 组件库
+    OPiece小程序 UI 组件库
   </view>
   <view
     wx:for="{{ list }}"

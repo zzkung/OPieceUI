@@ -7,7 +7,7 @@
       wx:for="{{icons.basic.list}}"
       wx:key="index"
     >
-      <text class="jmIcon jmIcon-{{item}} text-64"
+      <text class="opIcon opIcon-{{item}} text-64"
       ></text>
       <view class="text-28">{{item}}</view>
     </view>
@@ -23,7 +23,7 @@
       wx:for="{{icons.outline.list}}"
       wx:key="index"
     >
-      <text class="jmIcon jmIcon-{{item}} text-64"
+      <text class="opIcon opIcon-{{item}} text-64"
       ></text>
       <view class="text-28">{{item}}</view>
     </view>
@@ -39,7 +39,7 @@
       wx:for="{{icons.filled.list}}"
       wx:key="index"
     >
-      <text class="jmIcon jmIcon-{{item}} text-64"
+      <text class="opIcon opIcon-{{item}} text-64"
       ></text>
       <view class="text-28">{{item}}</view>
     </view>

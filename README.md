@@ -1,7 +1,7 @@
 <p align="center">
-  <img alt="logo" src="https://blog.zzkung.com/AppImg/jMeii_img/logo.png" width="120" style="margin-bottom: 10px;">
+  <img alt="logo" src="https://blog.zzkung.com/AppImg/OPieceImg/logo.png" width="120" style="margin-bottom: 10px;">
 </p>
-<h3 align="center">jMeii小程序 UI 组件库</h3>
+<h3 align="center">OPiece小程序 UI 组件库</h3>
 
 <!-- <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&color=#4fc08d" />
@@ -12,13 +12,13 @@
 
 ### 介绍
 
-jMeii小程序 UI 组件库。
+OPiece小程序 UI 组件库。
 
 ## 预览
 
 扫描下方小程序二维码，体验组件库示例：
 
-<img src="https://blog.zzkung.com/AppImg/jMeii_img/spCode.jpg" width="200" height="200" style="margin-top: 10px;" >
+<img src="https://blog.zzkung.com/AppImg/OPieceImg/spCode.jpg" width="200" height="200" style="margin-top: 10px;" >
 
 ## 安装
 
@@ -26,7 +26,7 @@ jMeii小程序 UI 组件库。
 
 直接通过 git 下载 源代码，并将`dist`目录拷贝到自己的项目中
 ```bash
-git clone https://github.com/zzkung/jMeiiUI.git
+git clone https://github.com/zzkung/OPieceUI.git
 ```
 
 <!-- ## 使用组件

@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'jMeii-icon',
+  name: 'oPiece-icon',
   basic: {
     name: '基础图标',
     list: [

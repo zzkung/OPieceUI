@@ -5,7 +5,7 @@ export const dev_server = 'local'
 export const host_dev = getHost_dev()
 export const host_real = 'https://blog.zzkung.com'
 export const imghost = host_real
-export const imghttp = host_real + '/AppImg/jMeii_img'
+export const imghttp = host_real + '/AppImg/OPieceImg'
 
 export const smt = []
 
