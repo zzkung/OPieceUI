@@ -3,6 +3,14 @@ module.exports = {
   basic: {
     name: '基础图标',
     list: [
+      'arrow-left',
+      'arrow-right',
+      'arrow-up',
+      'arrow-down',
+      'plus',
+      'minus',
+      'close',
+      'select',
       'more'
     ]
   },
