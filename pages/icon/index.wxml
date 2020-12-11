@@ -1,44 +1,4 @@
 <demo-block
-  title="基础用法"
->
-  <view class="flex flex-wrap align-center padding-lr-30">
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-like-o text-64"></text>
-    </view>
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-success-o text-64"></text>
-    </view>
-  </view>
-</demo-block>
-
-<demo-block
-  title="图标颜色"
->
-  <view class="flex flex-wrap align-center padding-lr-30">
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-like-o text-64"></text>
-    </view>
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-success-o text-64 text-darkGray"></text>
-    </view>
-  </view>
-</demo-block>
-
-<demo-block
-  title="图标大小"
->
-  <view class="flex flex-wrap align-center padding-lr-30">
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-like-o text-64"></text>
-    </view>
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-success-o text-80"></text>
-    </view>
-  </view>
-</demo-block>
-
-
-<demo-block
   title="{{icons.basic.name}}"
 >
   <view class="flex flex-wrap align-center padding-lr-30">
@@ -79,6 +39,46 @@
     >
       <text class="opIcon opIcon-{{item}} text-64"></text>
       <view class="text-28 margin-top-10">{{item}}</view>
+    </view>
+  </view>
+</demo-block>
+
+
+<demo-block
+  title="基础用法"
+>
+  <view class="flex flex-wrap align-center padding-lr-30">
+    <view class="icon-item text-center padding-tb-30">
+      <text class="opIcon opIcon-like-o text-64"></text>
+    </view>
+    <view class="icon-item text-center padding-tb-30">
+      <text class="opIcon opIcon-success-o text-64"></text>
+    </view>
+  </view>
+</demo-block>
+
+<demo-block
+  title="图标颜色"
+>
+  <view class="flex flex-wrap align-center padding-lr-30">
+    <view class="icon-item text-center padding-tb-30">
+      <text class="opIcon opIcon-like-o text-64"></text>
+    </view>
+    <view class="icon-item text-center padding-tb-30">
+      <text class="opIcon opIcon-success-o text-64 text-darkGray"></text>
+    </view>
+  </view>
+</demo-block>
+
+<demo-block
+  title="图标大小"
+>
+  <view class="flex flex-wrap align-center padding-lr-30">
+    <view class="icon-item text-center padding-tb-30">
+      <text class="opIcon opIcon-like-o text-64"></text>
+    </view>
+    <view class="icon-item text-center padding-tb-30">
+      <text class="opIcon opIcon-success-o text-80"></text>
     </view>
   </view>
 </demo-block>
