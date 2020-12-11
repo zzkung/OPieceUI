@@ -1,4 +1,8 @@
 Component({
+  options: {
+    styleIsolation: 'shared'
+  },
+
   properties: {
     group: Object
   },

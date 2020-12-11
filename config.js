@@ -23,4 +23,14 @@ export default [
       }
     ],
   },
+  {
+    groupName: '通用模板',
+    icon: 'ellipsis',
+    list: [
+      {
+        path: '/category-temp',
+        title: 'Category 分类模板',
+      }
+    ],
+  }
 ];

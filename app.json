@@ -3,7 +3,8 @@
     "pages/dashboard/index",
     "pages/icon/index",
     "pages/refresh-scroll/index",
-    "pages/vtabs/index"
+    "pages/vtabs/index",
+    "pages/category-temp/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
