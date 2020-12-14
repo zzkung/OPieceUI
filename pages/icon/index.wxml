@@ -1,14 +1,14 @@
 <demo-block
   title="{{icons.basic.name}}"
 >
-  <view class="flex flex-wrap align-center padding-lr-30">
+  <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
     <view
-      class="icon-item text-center padding-tb-30"
+      class="icon-item op-text--center op-padding-tb--30"
       wx:for="{{icons.basic.list}}"
       wx:key="index"
     >
-      <text class="opIcon opIcon-{{item}} text-64"></text>
-      <view class="text-28 margin-top-10">{{item}}</view>
+      <text class="opIcon opIcon-{{item}} op-text--64 op-text--gray"></text>
+      <view class="op-text--28 op-margin-top--10">{{item}}</view>
     </view>
   </view>
 </demo-block>
@@ -16,14 +16,14 @@
 <demo-block
   title="{{icons.outline.name}}"
 >
-  <view class="flex flex-wrap align-center padding-lr-30">
+  <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
     <view
-      class="icon-item text-center padding-tb-30"
+      class="icon-item op-text--center op-padding-tb--30"
       wx:for="{{icons.outline.list}}"
       wx:key="index"
     >
-      <text class="opIcon opIcon-{{item}} text-64"></text>
-      <view class="text-28 margin-top-10">{{item}}</view>
+      <text class="opIcon opIcon-{{item}} op-text--64 op-text--gray"></text>
+      <view class="op-text--28 op-margin-top--10">{{item}}</view>
     </view>
   </view>
 </demo-block>
@@ -31,14 +31,14 @@
 <demo-block
   title="{{icons.filled.name}}"
 >
-  <view class="flex flex-wrap align-center padding-lr-30">
+  <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
     <view
-      class="icon-item text-center padding-tb-30"
+      class="icon-item op-text--center op-padding-tb--30"
       wx:for="{{icons.filled.list}}"
       wx:key="index"
     >
-      <text class="opIcon opIcon-{{item}} text-64"></text>
-      <view class="text-28 margin-top-10">{{item}}</view>
+      <text class="opIcon opIcon-{{item}} op-text--64 op-text--gray"></text>
+      <view class="op-text--28 op-margin-top--10">{{item}}</view>
     </view>
   </view>
 </demo-block>
@@ -47,12 +47,12 @@
 <demo-block
   title="基础用法"
 >
-  <view class="flex flex-wrap align-center padding-lr-30">
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-like-o text-64"></text>
+  <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
+    <view class="icon-item op-text--center op-padding-tb--30">
+      <text class="opIcon opIcon-like-o op-text--64 op-text--gray"></text>
     </view>
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-success-o text-64"></text>
+    <view class="icon-item op-text--center op-padding-tb--30">
+      <text class="opIcon opIcon-success-o op-text--64 op-text--gray"></text>
     </view>
   </view>
 </demo-block>
@@ -60,12 +60,12 @@
 <demo-block
   title="图标颜色"
 >
-  <view class="flex flex-wrap align-center padding-lr-30">
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-like-o text-64"></text>
+  <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
+    <view class="icon-item op-text--center op-padding-tb--30">
+      <text class="opIcon opIcon-like-o op-text--64 op-text--red"></text>
     </view>
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-success-o text-64 text-darkGray"></text>
+    <view class="icon-item op-text--center op-padding-tb--30">
+      <text class="opIcon opIcon-success-o op-text--64 op-text--green"></text>
     </view>
   </view>
 </demo-block>
@@ -73,12 +73,12 @@
 <demo-block
   title="图标大小"
 >
-  <view class="flex flex-wrap align-center padding-lr-30">
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-like-o text-64"></text>
+  <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
+    <view class="icon-item op-text--center op-padding-tb--30">
+      <text class="opIcon opIcon-like-o op-text--64 op-text--gray"></text>
     </view>
-    <view class="icon-item text-center padding-tb-30">
-      <text class="opIcon opIcon-success-o text-80"></text>
+    <view class="icon-item op-text--center op-padding-tb--30">
+      <text class="opIcon opIcon-success-o op-text--80 op-text--gray"></text>
     </view>
   </view>
 </demo-block>

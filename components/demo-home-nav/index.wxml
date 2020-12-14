@@ -9,7 +9,7 @@
       bind:tap="onClick"
     >
       {{ item.title }}
-      <text class="opIcon opIcon-arrow-right text-40 demo-home-nav__icon"></text>
+      <text class="opIcon opIcon-arrow-right op-text--32 op-text--bold op-text--lightGray demo-home-nav__icon"></text>
     </view>
   </view>
 </view>
