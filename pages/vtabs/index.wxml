@@ -1,2 +1,18 @@
-<!--pages/vtabs/index.wxml-->
-<text>pages/vtabs/index.wxml</text>
+<view class="op-bg--white vtabs-header op-padding-lr--20">
+  <text class="opIcon opIcon-menu op-text--48"></text>
+</view>
+
+<vtabs tab-class="tab-box"
+  vtabs="{{vtabs}}"
+  activeTab="{{activeTab}}"
+  bindtabclick="onTabCLick" 
+  bindchange="onChange"
+>
+  <block wx:for="{{vtabs}}" wx:for-index="vtabindex" wx:key="title">
+    <vtabs-content tabIndex="{{activeTab}}">
+      <!-- <view>
+        <image style="width:120rpx;height:120rpx;" src="{{imghttp}}{{listData[vtabindex].im}}"></image>
+      </view> -->
+    </vtabs-content>
+  </block>
+</vtabs>

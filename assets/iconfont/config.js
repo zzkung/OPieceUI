@@ -22,7 +22,9 @@ module.exports = {
       'success-o',
       // without corresponding filled icon
       'share',
-      'delete'
+      'delete',
+      'topic',
+      'menu'
     ]
   },
   filled: {

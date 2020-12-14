@@ -21,12 +21,12 @@ page{
   --darkGray:#999;
   --lightGray: #c2c9cc;
   --grayWhite:#f8f8f8}
-button,image,input,navigator,page,scroll-view,swiper,textarea,view{box-sizing:border-box}
-view,text {word-break:break-all}
+  
+button,image,input,label,navigator,page,scroll-view,swiper,textarea,view{box-sizing:border-box}
+text,view{word-break:break-all}
 
 .op-init--btn{margin:0;padding:0;font-size:28rpx}
 
-/* 文本 */
 .op-text--red{color:var(--red)}
 .op-text--orange{color:var(--orange)}
 .op-text--yellow{color:var(--yellow)}
@@ -64,13 +64,29 @@ view,text {word-break:break-all}
 .op-text--right{text-align:right}
 .op-text--bold{font-weight:700}
 .op-text--price:before{margin-right:4rpx;content:"¥";font-size:80%}
-.op-text--ellipsis{overflow:hidden;white-space: nowrap;text-overflow: ellipsis;}
-.op-text--ellipsis-2,.op-text--ellipsis-3,.op-text--ellipsis-4,.op-text--ellipsis-5{display: -webkit-box;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-wrap: break-word;-o-text-overflow: ellipsis;word-break: break-all;-webkit-box-orient: vertical;}
-.op-text--ellipsis-2{-webkit-line-clamp: 2;}
-.op-text--ellipsis-3{-webkit-line-clamp: 3;}
-.op-text--ellipsis-4{-webkit-line-clamp: 4;}
-.op-text--ellipsis-5{-webkit-line-clamp: 5;}
+.op-text--ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.op-text--ellipsis-2,.op-text--ellipsis-3,.op-text--ellipsis-4,.op-text--ellipsis-5{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:break-word;-o-text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical}
+.op-text--ellipsis-2{-webkit-line-clamp:2}
+.op-text--ellipsis-3{-webkit-line-clamp:3}
+.op-text--ellipsis-4{-webkit-line-clamp:4}
+.op-text--ellipsis-5{-webkit-line-clamp:5}
 
+.op-bg--red{background:var(--red)}
+.op-bg--orange{background:var(--orange)}
+.op-bg--yellow{background:var(--yellow)}
+.op-bg--olive{background:var(--olive)}
+.op-bg--lightGreen{background:var(--lightGreen)}
+.op-bg--green{background:var(--green)}
+.op-bg--blue{background:var(--blue)}
+.op-bg--darkBlue{background:var(--darkBlue)}
+.op-bg--purple{background:var(--purple)}
+.op-bg--white{background:var(--white)}
+.op-bg--dark{background:var(--dark)}
+.op-bg--black{background:var(--black)}
+.op-bg--gray{background:var(--gray)}
+.op-bg--darkGray{background:var(--darkGray)}
+.op-bg--lightGray{background:var(--lightGray)}
+.op-bg--grayWhite{background:var(--grayWhite)}
 
 .op-flex{display:flex}
 .op-flex--sub{flex:1}
@@ -261,13 +277,13 @@ view,text {word-break:break-all}
 
 .op-block{display:block}
 .op-inline-block{display:inline-block}
-
 /* 1px边框 */
-.op-hairline,.op-hairline--top,.op-hairline--bottom,.op-hairline--left,.op-hairline--right,.op-hairline--top-bottom{position: relative;}
-.op-hairline::after,.op-hairline--top::after,.op-hairline--top::after,.op-hairline--left::after,.op-hairline--right::after,.op-hairline--top-bottom:after{position: absolute;box-sizing: border-box;-webkit-transform-origin: center;transform-origin: center;content: " ";pointer-events: none;top: -50%;bottom: -50%;left: -50%;right: -50%;border: 0 solid #ebedf0;-webkit-transform: scale(0.5);transform: scale(0.5);}
-.op-hairline::after{border-width: 1px;}
-.op-hairline--top::after{border-top-width: 1px;}
-.op-hairline--bottom::after{border-bottom-width: 1px;}
-.op-hairline--left::after{border-left-width: 1px;}
-.op-hairline--right::after{border-right-width: 1px;}
-.op-hairline--top-bottom:after{border-width: 1px 0;}
+.op-hairline,.op-hairline--bottom,.op-hairline--left,.op-hairline--right,.op-hairline--top,.op-hairline--top-bottom{position:relative}
+.op-hairline--left::after,.op-hairline--right::after,.op-hairline--top-bottom:after,.op-hairline--top::after,.op-hairline::after{position:absolute;top:-50%;right:-50%;bottom:-50%;left:-50%;box-sizing:border-box;border:0 solid #ebedf0;content:" ";-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:center;transform-origin:center;pointer-events:none}
+.op-hairline::after{border-width:1px}
+.op-hairline--top::after{border-top-width:1px}
+.op-hairline--bottom::after{border-bottom-width:1px}
+.op-hairline--left::after{border-left-width:1px}
+.op-hairline--right::after{border-right-width:1px}
+.op-hairline--top-bottom:after{border-width:1px 0}
+  

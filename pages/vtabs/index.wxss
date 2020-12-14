@@ -1,1 +1,9 @@
-/* pages/vtabs/index.wxss */
+.vtabs-header {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.tab-box {
+  height: calc(100vh - 100rpx)!important;
+  margin-top: 20rpx;
+}

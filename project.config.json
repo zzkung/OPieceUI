@@ -79,6 +79,18 @@
         {
           "name": "RefreshScroll 下拉刷新，上拉加载",
           "pathName": "pages/refresh-scroll/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "vtabs 纵向选项卡",
+          "pathName": "pages/vtabs/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Category 分类模板",
+          "pathName": "pages/category-temp/index",
           "scene": null
         }
       ]

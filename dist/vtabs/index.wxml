@@ -1,6 +1,6 @@
 <wxs src="../util.wxs" module="computed"></wxs>
 
-<view class="vtabs">
+<view class="vtabs {{tabClass}}">
   <view class="vtabs-bar__wrp {{tabBarClass}}" style="width: {{computed.addUtil(tabBarWidth)}};">
     <scroll-view 
       scroll-y

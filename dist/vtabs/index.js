@@ -6,6 +6,7 @@ Component({
     },
     properties: {
         vtabs: { type: Array, value: [] },
+        tabClass: { type: String, value: '' },
         tabBarClass: { type: String, value: '' },
         activeClass: { type: String, value: '' },
         tabBarLineColor: { type: String, value: '#ff0000' },
