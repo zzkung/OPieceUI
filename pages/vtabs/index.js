@@ -15,5 +15,17 @@ Page({
       listData: listData
     })
     console.log(this.data.listData)
+  },
+  onTabCLick(e) {
+    const index = e.detail.index
+    this.setData({
+      activeTab: index
+    })
+  },
+  onChange(e) {
+    const index = e.detail.index
+    this.setData({
+      activeTab: index
+    })
   }
 })

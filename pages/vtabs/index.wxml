@@ -10,9 +10,42 @@
 >
   <block wx:for="{{vtabs}}" wx:for-index="vtabindex" wx:key="title">
     <vtabs-content tabIndex="{{activeTab}}">
-      <!-- <view>
-        <image style="width:120rpx;height:120rpx;" src="{{imghttp}}{{listData[vtabindex].im}}"></image>
-      </view> -->
+      
+      <view class="op-padding--20">
+        <swiper class="op-margin-bottom--30 banner-box"
+          wx:if="{{listData[vtabindex].banner.length>0}}"
+          autoplay
+          circular
+          indicator-dots="{{listData[vtabindex].banner.length>1?true:false}}"
+          indicator-color=""
+          indicator-active-color=""
+          interval="{{5000}}"
+        >
+          <swiper-item wx:for="{{listData[vtabindex].banner}}" wx:key="index">
+            <image class="op-width--100 op-height--100" src="{{imghttp}}{{item}}" mode="aspectFill" lazy-load></image>
+          </swiper-item>
+        </swiper>
+
+        <view>
+
+          <view class="op-margin-bottom--30" wx:if="{{listData[vtabindex].list.length > 0}}" wx:for="{{listData[vtabindex].list}}" wx:for-item="listItem" wx:for-index="listIdx" wx:key="listIdx">
+            <view class="op-flex op-align--center op-justify--between op-margin-bottom--10">
+              <view class="op-text--bold op-text--28">{{listItem.title}}</view>
+              <view>
+                <text class="opIcon opIcon-more op-text--48 op-text--gray"></text>
+              </view>
+            </view>
+            <view>
+              <view class="data-item op-margin-bottom--20 op-text--center" wx:for="{{listItem.data}}" wx:for-item="dataItem" wx:for-index="dataIdx" wx:key="dataIdx">
+                <image class="data-item--cover op-bg--grayWhite op-margin-bottom--10" src="{{imghttp}}{{dataItem.cover}}" mode="aspectFit" lazy-load></image>
+                <view class="op-text--24 op-text--darkGray">{{dataItem.title}}</view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </view>
+
     </vtabs-content>
   </block>
 </vtabs>

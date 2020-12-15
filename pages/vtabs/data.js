@@ -137,7 +137,10 @@ const shoplist = [
 let listData = []
 export function randomData() {
   tabList.forEach((item, index) => {
-    listData[index] = []
+    listData[index] = {
+      banner: banner.slice(0, Math.floor(Math.random() * 7)),
+      list: []
+    }
     let randListNum =  Math.floor(Math.random() * (8 - 1 + 1) + 1)
     randomList(randListNum, index)
   })
@@ -145,10 +148,9 @@ export function randomData() {
 }
 function randomList(num, index) {
   for (let idx = 0; idx < num; idx++) {
-    listData[index].push({
+    listData[index].list.push({
       title: title[Math.floor(Math.random() * 7)],
-      banner: banner.slice(0, Math.floor(Math.random() * 7)),
-      list: shoplist.slice(0, Math.floor(Math.random() * 19))
+      data: shoplist.slice(0, Math.floor(Math.random() * 19))
     })
   }
 }
