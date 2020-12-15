@@ -4,7 +4,7 @@
     <view class="demo-param-item__radio">
       <label class="demo-param-item__radio-label" wx:for="{{paramItem.items}}" wx:key="index">
         <view class="">
-          <radio value="{{paramIdx}},{{index}}" checked="{{item.checked}}"/>
+          <radio value="{{paramIdx}}{{index}}" checked="{{item.checked}}"/>
         </view>
         <view class="">{{item.name}}</view>
       </label>

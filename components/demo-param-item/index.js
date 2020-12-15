@@ -10,7 +10,7 @@ Component({
 
   methods: {
     radioChange(e) {
-      let value = e.detail.value.split(',')
+      let value = e.detail.value.split('').map(Number)
       this.triggerEvent('radiochange', { value })
     }
   }

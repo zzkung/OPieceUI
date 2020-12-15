@@ -17,15 +17,9 @@ Page({
           {name: '左右联动', checked: 'true'},
           {name: '互相独立'}
         ]
-      },
-      {
-        title: '切换方式',
-        items: [
-          {name: '左右联动', checked: 'true'},
-          {name: '互相独立'}
-        ]
       }
-    ]
+    ],
+    paramCheckeds: [0]
   },
   onLoad() {
     wx.showLoading({
@@ -37,21 +31,21 @@ Page({
     }, () => {
       wx.hideLoading()
     })
-    console.log(this.data.vtabs)
   },
   onTabCLick(e) {
     const index = e.detail.index
-    // this.setData({
-    //   activeTab: index
-    // })
+    if (this.data.paramCheckeds[0] == 0) return
+    this.setData({
+      activeTab: index
+    })
   },
   onChange(e) {
     const index = e.detail.index
-    // this.setData({
-    //   activeTab: index
-    // })
   },
-  radioChange(e) {
-    console.log(e.detail.value)
+  radioChange(e) { // 切换参数
+    let value = e.detail.value
+    this.setData({
+      [`paramCheckeds[${value[0]}]`]: value[1]
+    })
   }
 })

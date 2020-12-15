@@ -35,58 +35,58 @@ Component({
     },
     observers: {
         activeTab: function(_activeTab) {
-            this.scrollTabBar(_activeTab);
+            this.scrollTabBar(_activeTab)
         }
     },
     relations: {
         '../vtabs-content/index': {
             type: 'child',
             linked: function(target) {
-                let _this = this;
+                let _this = this
 
                 target.calcHeight(function (rect) {
-                    _this.data._contentHeight[target.data.tabIndex] = rect.height;
+                    _this.data._contentHeight[target.data.tabIndex] = rect.height
                     if (_this._calcHeightTimer) {
-                        clearTimeout(_this._calcHeightTimer);
+                        clearTimeout(_this._calcHeightTimer)
                     }
                     _this._calcHeightTimer = setTimeout(function () {
-                        _this.calcHeight();
+                        _this.calcHeight()
                     }, 100);
-                });
+                })
             },
             unlinked: function(target) {
-                delete this.data._contentHeight[target.data.tabIndex];
+                delete this.data._contentHeight[target.data.tabIndex]
             }
         }
     },
     methods: {
         calcHeight: function() {
-            let length = this.data.vtabs.length;
-            let _contentHeight = this.data._contentHeight;
-            let _heightRecords = [];
-            let temp = 0;
+            let length = this.data.vtabs.length
+            let _contentHeight = this.data._contentHeight
+            let _heightRecords = []
+            let temp = 0
             for (let i = 0; i < length; i++) {
-                _heightRecords[i] = temp + (_contentHeight[i] || 0);
-                temp = _heightRecords[i];
+                _heightRecords[i] = temp + (_contentHeight[i] || 0)
+                temp = _heightRecords[i]
             }
-            this.data._heightRecords = _heightRecords;
+            this.data._heightRecords = _heightRecords
         },
         scrollTabBar: function(index) {
-            let len = this.data.vtabs.length;
-            if (len === 0) return;
-            let currentView = index < 6 ? 0 : index - 5;
-            if (currentView >= len) currentView = len - 1;
-            this.setData({ currentView: currentView });
+            let len = this.data.vtabs.length
+            if (len === 0) return
+            let currentView = index < 6 ? 0 : index - 5
+            if (currentView >= len) currentView = len - 1
+            this.setData({ currentView: currentView })
         },
         handleTabClick: function(e) {
-            let _heightRecords = this.data._heightRecords;
-            let index = e.currentTarget.dataset.index;
-            let contentScrollTop = _heightRecords[index - 1] || 0;
-            this.triggerEvent('tabclick', { index: index });
+            let _heightRecords = this.data._heightRecords
+            let index = e.currentTarget.dataset.index
+            let contentScrollTop = _heightRecords[index - 1] || 0
+            this.triggerEvent('tabclick', { index: index })
             this.setData({
                 activeTab: index,
                 contentScrollTop: contentScrollTop
-            });
+            })
         },
 
         handleContentScroll: function(e) {
@@ -97,35 +97,35 @@ Component({
             })
             ////////////////
 
-            if (_heightRecords.length === 0) return;
-            let length = vtabs.length;
-            let scrollTop = e.detail.scrollTop;
-            let index = 0;
+            if (_heightRecords.length === 0) return
+            let length = vtabs.length
+            let scrollTop = e.detail.scrollTop
+            let index = 0
             if (scrollTop >= _heightRecords[0]) {
                 for (let i = 1; i < length; i++) {
                     if (scrollTop >= _heightRecords[i - 1] && scrollTop < _heightRecords[i]) {
-                        index = i;
+                        index = i
                         break;
                     }
                 }
             }
             if (index !== activeTab) {
-                this.triggerEvent('change', { index: index });
-                this.setData({ activeTab: index });
+                this.triggerEvent('change', { index: index })
+                this.setData({ activeTab: index })
             }
         },
 
         ////////////////
-        handleRefresherPulling: function handleRefresherPulling(e) {
+        handleRefresherPulling: function(e) {
             let { vtabs, activeTab } = this.data
             this.setData({
                 pullupTitle: vtabs[activeTab - 1].title
             })
         },
-        handleContentRefresherRefresh: function handleContentRefresherRefresh(e) {
-            let _heightRecords = this.data._heightRecords;
-            let index = this.data.activeTab - 1;
-            let contentScrollTop = _heightRecords[index - 1] || 0;
+        handleContentRefresherRefresh: function(e) {
+            let _heightRecords = this.data._heightRecords
+            let index = this.data.activeTab - 1
+            let contentScrollTop = _heightRecords[index - 1] || 0
             this.setData({
                 refresherStatus: true
             }, () => {
@@ -134,21 +134,21 @@ Component({
                         refresherStatus: false,
                         contentScrollTop: contentScrollTop
                     })
-                    this.triggerEvent('tabclick', { index: index });
+                    this.triggerEvent('tabclick', { index: index })
                 }, 500)
                 
-            });
+            })
         },
-        handleContentTolower: function handleContentTolower(e) {
-            let _heightRecords = this.data._heightRecords;
-            let index = this.data.activeTab + 1;
-            let contentScrollTop = _heightRecords[index - 1] || 0;
-            this.triggerEvent('tabclick', { index: index });
+        handleContentTolower: function(e) {
+            let _heightRecords = this.data._heightRecords
+            let index = this.data.activeTab + 1
+            let contentScrollTop = _heightRecords[index - 1] || 0
+            this.triggerEvent('tabclick', { index: index })
             this.setData({
                 activeTab: index,
                 contentScrollTop: contentScrollTop
-            });
+            })
         }
         ////////////////
     }
-});
+})
