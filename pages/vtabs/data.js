@@ -134,23 +134,22 @@ const shoplist = [
   }
 ]
 
-let listData = []
 export function randomData() {
-  tabList.forEach((item, index) => {
-    listData[index] = {
-      banner: banner.slice(0, Math.floor(Math.random() * 7)),
-      list: []
-    }
+  tabList.map((item, index) => {
+    item.banner = banner.slice(0, Math.floor(Math.random() * 7))
+
     let randListNum =  Math.floor(Math.random() * (8 - 1 + 1) + 1)
-    randomList(randListNum, index)
+    item.list = randomList(randListNum)
   })
-  return listData
+  return tabList
 }
-function randomList(num, index) {
+function randomList(num) {
+  let list = []
   for (let idx = 0; idx < num; idx++) {
-    listData[index].list.push({
+    list.push({
       title: title[Math.floor(Math.random() * 7)],
       data: shoplist.slice(0, Math.floor(Math.random() * 19))
     })
   }
+  return list
 }

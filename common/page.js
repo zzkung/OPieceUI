@@ -1,5 +1,10 @@
 export default function(options = {}) {
   return Page({
+    showScreenDialog() {
+      this.setData({
+        showParam: true
+      })
+    },
     onShareAppMessage() {
       console.log('page.js')
       return {

@@ -1,0 +1,13 @@
+<view class="custom-class demo-param-item" wx:for="{{params}}" wx:for-item="paramItem" wx:for-index="paramIdx" wx:key="paramIdx">
+  <view wx:if="{{paramItem.title}}" class="demo-param-item__title">{{paramItem.title}}</view>
+  <radio-group bindchange="radioChange">
+    <view class="demo-param-item__radio">
+      <label class="demo-param-item__radio-label" wx:for="{{paramItem.items}}" wx:key="index">
+        <view class="">
+          <radio value="{{paramIdx}},{{index}}" checked="{{item.checked}}"/>
+        </view>
+        <view class="">{{item.name}}</view>
+      </label>
+    </view>
+  </radio-group>
+</view>

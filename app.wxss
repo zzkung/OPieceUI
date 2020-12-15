@@ -1,2 +1,11 @@
 @import "assets/iconfont/iconfont.wxss";
 @import "assets/style/common.wxss";
+
+.half-screen-dialog {
+  padding: 0 24rpx env(safe-area-inset-bottom);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}
+.half-screen-dialog .weui-half-screen-dialog__hd {
+  height: 6em;
+  text-align: center;
+}

@@ -1,34 +1,38 @@
 <view class="op-bg--white vtabs-header op-padding-lr--20">
-  <text class="opIcon opIcon-menu op-text--48"></text>
+  <text class="opIcon opIcon-menu op-text--48" bindtap="showScreenDialog"></text>
 </view>
 
+<!-- 组件 START -->
 <vtabs tab-class="tab-box"
   vtabs="{{vtabs}}"
   activeTab="{{activeTab}}"
   bindtabclick="onTabCLick" 
   bindchange="onChange"
 >
-  <block wx:for="{{vtabs}}" wx:for-index="vtabindex" wx:key="title">
-    <vtabs-content tabIndex="{{activeTab}}">
-      
+  <block wx:for="{{vtabs}}" wx:for-item="vtabItem" wx:for-index="vtabindex" wx:key="title">
+    <vtabs-content tabIndex="{{vtabindex}}">
       <view class="op-padding--20">
+
+        <view class="op-text--red">{{vtabItem.title}}（待删除）</view>
+
         <swiper class="op-margin-bottom--30 banner-box"
-          wx:if="{{listData[vtabindex].banner.length>0}}"
+          wx:if="{{vtabItem.banner.length>0}}"
           autoplay
           circular
-          indicator-dots="{{listData[vtabindex].banner.length>1?true:false}}"
-          indicator-color=""
-          indicator-active-color=""
+          indicator-dots="{{vtabItem.banner.length>1?true:false}}"
+          indicator-color="rgba(255,255,255,.5)"
+          indicator-active-color="#f92525"
           interval="{{5000}}"
+          duration="{{400}}"
         >
-          <swiper-item wx:for="{{listData[vtabindex].banner}}" wx:key="index">
+          <swiper-item wx:for="{{vtabItem.banner}}" wx:key="index">
             <image class="op-width--100 op-height--100" src="{{imghttp}}{{item}}" mode="aspectFill" lazy-load></image>
           </swiper-item>
         </swiper>
 
         <view>
 
-          <view class="op-margin-bottom--30" wx:if="{{listData[vtabindex].list.length > 0}}" wx:for="{{listData[vtabindex].list}}" wx:for-item="listItem" wx:for-index="listIdx" wx:key="listIdx">
+          <view class="op-margin-bottom--30" wx:if="{{listItem.data.length > 0}}" wx:for="{{vtabItem.list}}" wx:for-item="listItem" wx:for-index="listIdx" wx:key="listIdx">
             <view class="op-flex op-align--center op-justify--between op-margin-bottom--10">
               <view class="op-text--bold op-text--28">{{listItem.title}}</view>
               <view>
@@ -49,3 +53,17 @@
     </vtabs-content>
   </block>
 </vtabs>
+<!-- 组件 END -->
+
+<mp-half-screen-dialog 
+  extClass="half-screen-dialog"
+  show="{{showParam}}"
+  mask="{{true}}"
+  closabled="{{false}}"
+  maskClosable="{{true}}" 
+>
+  <view slot="title">参数配置</view>
+  <view slot="desc">
+    <demo-param-item params="{{params}}" bindradiochange="radioChange"></demo-param-item>
+  </view>
+</mp-half-screen-dialog>

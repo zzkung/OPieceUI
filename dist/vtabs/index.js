@@ -34,14 +34,14 @@ Component({
         pulldownTitle: ''
     },
     observers: {
-        activeTab: function activeTab(_activeTab) {
+        activeTab: function(_activeTab) {
             this.scrollTabBar(_activeTab);
         }
     },
     relations: {
         '../vtabs-content/index': {
             type: 'child',
-            linked: function linked(target) {
+            linked: function(target) {
                 let _this = this;
 
                 target.calcHeight(function (rect) {
@@ -54,16 +54,13 @@ Component({
                     }, 100);
                 });
             },
-            unlinked: function unlinked(target) {
+            unlinked: function(target) {
                 delete this.data._contentHeight[target.data.tabIndex];
             }
         }
     },
-    lifetimes: {
-        attached: function attached() {}
-    },
     methods: {
-        calcHeight: function calcHeight() {
+        calcHeight: function() {
             let length = this.data.vtabs.length;
             let _contentHeight = this.data._contentHeight;
             let _heightRecords = [];
@@ -74,14 +71,14 @@ Component({
             }
             this.data._heightRecords = _heightRecords;
         },
-        scrollTabBar: function scrollTabBar(index) {
+        scrollTabBar: function(index) {
             let len = this.data.vtabs.length;
             if (len === 0) return;
             let currentView = index < 6 ? 0 : index - 5;
             if (currentView >= len) currentView = len - 1;
             this.setData({ currentView: currentView });
         },
-        handleTabClick: function handleTabClick(e) {
+        handleTabClick: function(e) {
             let _heightRecords = this.data._heightRecords;
             let index = e.currentTarget.dataset.index;
             let contentScrollTop = _heightRecords[index - 1] || 0;
@@ -92,7 +89,7 @@ Component({
             });
         },
 
-        handleContentScroll: function handleContentScroll(e) {
+        handleContentScroll: function(e) {
             let { vtabs, activeTab, _heightRecords } = this.data
             ////////////////
             this.setData({

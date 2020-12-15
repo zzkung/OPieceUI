@@ -13,9 +13,14 @@
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {
+    "mp-half-screen-dialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog",
     "demo-block": "./components/demo-block/index",
     "demo-param": "./components/demo-param/index",
+    "demo-param-item": "./components/demo-param-item/index",
     "refresh-scroll": "./dist/refresh-scroll/index"
+  },
+  "useExtendedLib": {
+    "weui": true
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
