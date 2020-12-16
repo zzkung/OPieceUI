@@ -1,66 +1,44 @@
-// pages/category-temp/index.js
+import Page from '../../common/page'
+import paramConfig from '../paramConfig'
+const datas = require('./data.js')
+const app = getApp()
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
+    imghttp: app.globalData.imghttp,
+    vtabs: [],
+    activeTab: 0,
 
+    showParam: false,
+    params: paramConfig.vtabsParam,
+    paramCheckeds: [0]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad() {
+    wx.showLoading({
+      title: '加载中...',
+    })
+    let vtabs = datas.randomData()
+    this.setData({
+      vtabs: vtabs
+    }, () => {
+      wx.hideLoading()
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onTabCLick(e) {
+    const index = e.detail.index
+    if (this.data.paramCheckeds[0] == 0) return
+    this.setData({
+      activeTab: index
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onChange(e) {
+    const index = e.detail.index
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  radioChange(e) { // 切换参数
+    let value = e.detail.value
+    this.setData({
+      [`paramCheckeds[${value[0]}]`]: value[1]
+    })
   }
 })

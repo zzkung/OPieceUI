@@ -1,1 +1,31 @@
-/* pages/category-temp/index.wxss */
+.vtabs-header {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.tab-box {
+  height: calc(100vh - 90rpx)!important;
+  margin-top: 10rpx;
+}
+
+.banner-box {
+  height: 200rpx;
+}
+.banner-box image {
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.data-item {
+  display: inline-block;
+  width: calc((100vw - 110px - 40rpx) / 3);
+  height: 200rpx;
+}
+.data-item--cover {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.vtabs-content__scrollview {
+  background: #fff;
+}

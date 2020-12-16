@@ -13,7 +13,6 @@
   <block wx:if="{{paramCheckeds[0] == 0}}" wx:for="{{vtabs}}" wx:for-item="vtabItem" wx:for-index="vtabindex" wx:key="title">
     <vtabs-content tabIndex="{{vtabindex}}">
       <view class="op-padding--20">
-        <view class="op-text--red">{{vtabItem.title}}（待删除）</view>
         <swiper class="op-margin-bottom--30 banner-box"
           wx:if="{{vtabItem.banner.length>0}}"
           autoplay
@@ -53,7 +52,6 @@
   <!-- 相互独立 START -->
   <vtabs-content wx:if="{{paramCheckeds[0] == 1}}" tabIndex="{{activeTab}}">
     <view class="op-padding--20" style="min-height:100%;">
-      <view class="op-text--red">{{vtabs[activeTab].title}}（待删除）s</view>
       <swiper class="op-margin-bottom--30 banner-box"
         wx:if="{{vtabs[activeTab].banner.length>0}}"
         autoplay

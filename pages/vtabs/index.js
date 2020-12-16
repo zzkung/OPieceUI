@@ -1,4 +1,5 @@
 import Page from '../../common/page'
+import paramConfig from '../paramConfig'
 const datas = require('./data.js')
 const app = getApp()
 
@@ -10,15 +11,7 @@ Page({
     activeTab: 0,
 
     showParam: false,
-    params: [
-      {
-        title: '切换方式',
-        items: [
-          {name: '左右联动', checked: 'true'},
-          {name: '互相独立'}
-        ]
-      }
-    ],
+    params: paramConfig.vtabsParam,
     paramCheckeds: [0]
   },
   onLoad() {
