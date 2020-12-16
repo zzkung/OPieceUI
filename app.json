@@ -4,7 +4,9 @@
     "pages/icon/index",
     "pages/refresh-scroll/index",
     "pages/vtabs/index",
-    "pages/category-temp/index"
+    "pages/category-temp/index",
+    "pages/copyright/index",
+    "pages/about/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

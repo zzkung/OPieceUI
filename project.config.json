@@ -91,6 +91,18 @@
         {
           "name": "Category 分类模板",
           "pathName": "pages/category-temp/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "版权信息",
+          "pathName": "pages/copyright/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "服务协议",
+          "pathName": "pages/service-agreement/index",
           "scene": null
         }
       ]

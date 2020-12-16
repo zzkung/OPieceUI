@@ -6,4 +6,14 @@ Component({
     list,
     imghttp: app.globalData.imghttp
   },
+
+  lifetimes: {
+    attached () {
+      wx.loadFontFace({
+        family: 'CustomFont',
+        source: `url("${app.globalData.imghttp}/font/Barlow/Barlow-SemiBoldItalic.ttf")`,
+        success() {}
+      })
+    }
+  }
 });

@@ -3,6 +3,7 @@ page{
   background:var(--grayWhite);
   color:var(--black);
   font-size:28rpx;
+  letter-spacing: 0;
   font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Segoe UI,Arial,Roboto,'PingFang SC','miui','Hiragino Sans GB', 'Microsoft Yahei',sans-serif;
   -webkit-font-smoothing:antialiased;
   --red:#fa5151;
@@ -19,7 +20,7 @@ page{
   --black:#323232;
   --gray:#666;
   --darkGray:#999;
-  --lightGray: #c2c9cc;
+  --lightGray: #c0c4cc;
   --grayWhite:#f8f8f8}
   
 button,image,input,label,navigator,page,scroll-view,swiper,textarea,view{box-sizing:border-box}
