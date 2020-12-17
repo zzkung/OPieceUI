@@ -9,7 +9,7 @@
       wx:for="{{icons.basic.list}}"
       wx:key="index"
     >
-      <text class="opIcon opIcon-{{item}} op-text--64 op-text--gray"></text>
+      <text class="opIcon opIcon-{{item}} op-text--64 op-text--regular"></text>
       <view class="op-text--28 op-margin-top--10">{{item}}</view>
     </view>
   </view>
@@ -24,7 +24,7 @@
       wx:for="{{icons.outline.list}}"
       wx:key="index"
     >
-      <text class="opIcon opIcon-{{item}} op-text--64 op-text--gray"></text>
+      <text class="opIcon opIcon-{{item}} op-text--64 op-text--regular"></text>
       <view class="op-text--28 op-margin-top--10">{{item}}</view>
     </view>
   </view>
@@ -39,7 +39,7 @@
       wx:for="{{icons.filled.list}}"
       wx:key="index"
     >
-      <text class="opIcon opIcon-{{item}} op-text--64 op-text--gray"></text>
+      <text class="opIcon opIcon-{{item}} op-text--64 op-text--regular"></text>
       <view class="op-text--28 op-margin-top--10">{{item}}</view>
     </view>
   </view>
@@ -51,10 +51,10 @@
 >
   <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
     <view class="icon-item op-text--center op-padding-tb--30">
-      <text class="opIcon opIcon-like-o op-text--64 op-text--gray"></text>
+      <text class="opIcon opIcon-like-o op-text--64 op-text--regular"></text>
     </view>
     <view class="icon-item op-text--center op-padding-tb--30">
-      <text class="opIcon opIcon-success-o op-text--64 op-text--gray"></text>
+      <text class="opIcon opIcon-success-o op-text--64 op-text--regular"></text>
     </view>
   </view>
 </demo-block>
@@ -64,10 +64,10 @@
 >
   <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
     <view class="icon-item op-text--center op-padding-tb--30">
-      <text class="opIcon opIcon-like-o op-text--64 op-text--red"></text>
+      <text class="opIcon opIcon-like-o op-text--64 op-color--danger"></text>
     </view>
     <view class="icon-item op-text--center op-padding-tb--30">
-      <text class="opIcon opIcon-success-o op-text--64 op-text--green"></text>
+      <text class="opIcon opIcon-success-o op-text--64 op-color--success"></text>
     </view>
   </view>
 </demo-block>
@@ -77,10 +77,10 @@
 >
   <view class="op-flex op-flex--wrap op-align--center op-padding-lr--30">
     <view class="icon-item op-text--center op-padding-tb--30">
-      <text class="opIcon opIcon-like-o op-text--64 op-text--gray"></text>
+      <text class="opIcon opIcon-like-o op-text--64 op-text--regular"></text>
     </view>
     <view class="icon-item op-text--center op-padding-tb--30">
-      <text class="opIcon opIcon-success-o op-text--80 op-text--gray"></text>
+      <text class="opIcon opIcon-success-o op-text--80 op-text--regular"></text>
     </view>
   </view>
 </demo-block>

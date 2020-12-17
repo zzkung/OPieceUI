@@ -1,13 +1,13 @@
-<view class="table op-bg--white">
-  <view class="op-flex op-align--center op-text--center op-bg--grayWhite op-text--bold">
+<view class="table">
+  <view class="op-flex op-align--center op-text--center op-bg--base op-text--bold">
     <view class="th op-hairline">名称</view>
     <view class="th op-hairline">许可证</view>
     <view class="th op-hairline">是否经过修改</view>
   </view>
   <view class="op-flex op-align--center op-text--center" wx:for="{{ lists }}" wx:key="index">
-    <view class="td op-hairline op-text--blue" hover-class="text-hover" data-link="{{item.namelink}}" bindtap="copyUrl">{{ item.name }}</view>
-    <view class="td op-hairline op-text--blue" hover-class="text-hover" data-link="{{item.licenselink}}" bindtap="copyUrl">{{ item.license }}</view>
-    <view class="td op-hairline {{ item.hasModify ? '' : 'op-text--darkGray' }}">{{ item.hasModify ? '是' : '否' }}</view>
+    <view class="td op-hairline op-link" hover-class="text-hover" data-link="{{item.namelink}}" bindtap="copyUrl">{{ item.name }}</view>
+    <view class="td op-hairline op-link" hover-class="text-hover" data-link="{{item.licenselink}}" bindtap="copyUrl">{{ item.license }}</view>
+    <view class="td op-hairline {{ item.hasModify ? '' : 'op-text--secondary' }}">{{ item.hasModify ? '是' : '否' }}</view>
   </view>
-  <view class="op-padding--30 op-text--24 op-text--lightGray">因部分原因，不能使用 webview 打开查看，请复制链接后使用浏览器打开查看!</view>
+  <view class="op-padding--30 op-text--24 op-text--placeholder">因部分原因，不能使用 webview 打开查看，请复制链接后使用浏览器打开查看!</view>
 </view>

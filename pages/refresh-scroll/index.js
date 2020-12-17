@@ -1,3 +1,5 @@
+import Page from '../../common/page'
+import paramConfig from '../paramConfig'
 let app = getApp(), pageStart = 0
 
 let testData = [
@@ -41,7 +43,11 @@ Page({
     requesting: false,
     end: false,
     emptyShow: false,
-    infoText: '刷新成功'
+		infoText: '刷新成功',
+
+    showParam: false,
+    params: paramConfig.vtabsParam,
+    paramCheckeds: [0]
   },
 
   onLoad: function (options) {

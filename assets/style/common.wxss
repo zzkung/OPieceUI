@@ -13,8 +13,8 @@
  * 
  * 
  * Brand Color
- * op-color__primary
- * op-color__primary--dark
+ * op-color--primary
+ * op-color--primary-dark
  * Primary、Dark、Disabled、Light
  * 
  * Functional Color
@@ -36,29 +36,56 @@
  */
 
 page{
+  /* 重置样式 */
+  --primary: #fa5151;
+  --primary-dark: #dd6161;
+  --primary-disabled: #fab6b6;
+  --primary-light: #fef0f0;
+  
+  --success: #07c160;
+  --success-dark: #06ae56;
+  --success-disabled: #71d5a1;
+  --success-light: #dbf1e1;
+
+  --warning: #ffc300;
+  --warning-dark: #e6b000;
+  --warning-disabled: #ffdf77;
+  --warning-light: #fff2c5;
+  
+  --danger: #fa5151;
+  --danger-dark: #dd6161;
+  --danger-disabled: #fab6b6;
+  --danger-light: #fef0f0;
+  
+  --info: #909399;
+  --info-dark: #82848a;
+  --info-disabled: #c8c9cc;
+  --info-light: #f4f4f5;
+
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+
+  --border-base: #dcdfe6;
+  --border-light: #e4e7ed;
+  --border-lighter: #ebeef5;
+  --border-extralight: #f2f6fc;
+
+  --bg-base: #f3f4f6;
+
+  /* 基础色 */
+  --white:#fff;
+  --link: #409EFF;
+
   min-height:100vh;
-  background:var(--grayWhite);
-  color:var(--black);
+  background:var(--bg-base);
+  color:var(--text-primary);
   font-size:28rpx;
   letter-spacing: 0;
   font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Segoe UI,Arial,Roboto,'PingFang SC','miui','Hiragino Sans GB', 'Microsoft Yahei',sans-serif;
-  -webkit-font-smoothing:antialiased;
-  --red:#fa5151;
-  --orange: #c87d2f;
-  --yellow: #ffc300;
-  --olive: #91d300;
-  --lightGreen: #95ec69;
-  --green: #07c160;
-  --blue: #10aeff;
-  --darkBlue: #1485ee;
-  --purple: #6467f0;
-  --white:#fff;
-  --dark:#000;
-  --black:#323232;
-  --gray:#666;
-  --darkGray:#999;
-  --lightGray: #c0c4cc;
-  --grayWhite:#f8f8f8}
+  -webkit-font-smoothing:antialiased
+}
   
 button,image,input,label,navigator,page,scroll-view,swiper,textarea,view{box-sizing:border-box}
 text,view{word-break:break-all}
@@ -67,22 +94,71 @@ image{max-width:100%;display:inline-block;position:relative;z-index:0;vertical-a
 
 .op-init--btn{margin:0;padding:0;font-size:28rpx}
 
-.op-text--red{color:var(--red)}
-.op-text--orange{color:var(--orange)}
-.op-text--yellow{color:var(--yellow)}
-.op-text--olive{color:var(--olive)}
-.op-text--lightGreen{color:var(--lightGreen)}
-.op-text--green{color:var(--green)}
-.op-text--blue{color:var(--blue)}
-.op-text--darkBlue{color:var(--darkBlue)}
-.op-text--purple{color:var(--purple)}
-.op-text--white{color:var(--white)}
-.op-text--dark{color:var(--dark)}
-.op-text--black{color:var(--black)}
-.op-text--gray{color:var(--gray)}
-.op-text--darkGray{color:var(--darkGray)}
-.op-text--lightGray{color:var(--lightGray)}
-.op-text--grayWhite{color:var(--grayWhite)}
+.op-link{color:var(--link)}
+
+.op-color--primary{color:var(--primary)}
+.op-color--primary-dark{color:var(--primary-dark)}
+.op-color--primary-disabled{color:var(--primary-disabled)}
+.op-color--primary-light{color:var(--primary-light)}
+
+.op-color--success{color:var(--success)}
+.op-color--success-dark{color:var(--success-dark)}
+.op-color--success-disabled{color:var(--success-disabled)}
+.op-color--success-light{color:var(--success-light)}
+
+.op-color--warning{color:var(--warning)}
+.op-color--warning-dark{color:var(--warning-dark)}
+.op-color--warning-disabled{color:var(--warning-disabled)}
+.op-color--warning-light{color:var(--warning-light)}
+
+.op-color--danger{color:var(--danger)}
+.op-color--danger-dark{color:var(--danger-dark)}
+.op-color--danger-disabled{color:var(--danger-disabled)}
+.op-color--danger-light{color:var(--danger-light)}
+
+.op-color--info{color:var(--info)}
+.op-color--info-dark{color:var(--info-dark)}
+.op-color--info-disabled{color:var(--info-disabled)}
+.op-color--info-light{color:var(--info-light)}
+
+.op-bg--primary{background:var(--primary)}
+.op-bg--primary-dark{background:var(--primary-dark)}
+.op-bg--primary-disabled{background:var(--primary-disabled)}
+.op-bg--primary-light{background:var(--primary-light)}
+
+.op-bg--success{background:var(--success)}
+.op-bg--success-dark{background:var(--success-dark)}
+.op-bg--success-disabled{background:var(--success-disabled)}
+.op-bg--success-light{background:var(--success-light)}
+
+.op-bg--warning{background:var(--warning)}
+.op-bg--warning-dark{background:var(--warning-dark)}
+.op-bg--warning-disabled{background:var(--warning-disabled)}
+.op-bg--warning-light{background:var(--warning-light)}
+
+.op-bg--danger{background:var(--danger)}
+.op-bg--danger-dark{background:var(--danger-dark)}
+.op-bg--danger-disabled{background:var(--danger-disabled)}
+.op-bg--danger-light{background:var(--danger-light)}
+
+.op-bg--info{background:var(--info)}
+.op-bg--info-dark{background:var(--info-dark)}
+.op-bg--info-disabled{background:var(--info-disabled)}
+.op-bg--info-light{background:var(--info-light)}
+
+.op-bg--base{background:var(--bg-base)}
+
+.op-text--primary{color:var(--text-primary)}
+.op-text--regular{color:var(--text-regular)}
+.op-text--secondary{color:var(--text-secondary)}
+.op-text--placeholder{color:var(--text-placeholder)}
+
+/* 考虑是否保留这种写法 */
+.op-border--base{color:var(--border-base)}
+.op-border--light{color:var(--border-light)}
+.op-border--lighter{color:var(--border-lighter)}
+.op-border--extralight{color:var(--border-extralight)}
+
 .op-text--20{font-size:20rpx}
 .op-text--22{font-size:22rpx}
 .op-text--24{font-size:24rpx}
@@ -110,23 +186,6 @@ image{max-width:100%;display:inline-block;position:relative;z-index:0;vertical-a
 .op-text--ellipsis-3{-webkit-line-clamp:3}
 .op-text--ellipsis-4{-webkit-line-clamp:4}
 .op-text--ellipsis-5{-webkit-line-clamp:5}
-
-.op-bg--red{background:var(--red)}
-.op-bg--orange{background:var(--orange)}
-.op-bg--yellow{background:var(--yellow)}
-.op-bg--olive{background:var(--olive)}
-.op-bg--lightGreen{background:var(--lightGreen)}
-.op-bg--green{background:var(--green)}
-.op-bg--blue{background:var(--blue)}
-.op-bg--darkBlue{background:var(--darkBlue)}
-.op-bg--purple{background:var(--purple)}
-.op-bg--white{background:var(--white)}
-.op-bg--dark{background:var(--dark)}
-.op-bg--black{background:var(--black)}
-.op-bg--gray{background:var(--gray)}
-.op-bg--darkGray{background:var(--darkGray)}
-.op-bg--lightGray{background:var(--lightGray)}
-.op-bg--grayWhite{background:var(--grayWhite)}
 
 .op-flex{display:flex}
 .op-flex--sub{flex:1}

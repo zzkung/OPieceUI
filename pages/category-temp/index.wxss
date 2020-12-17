@@ -1,6 +1,7 @@
 .vtabs-header {
   height: 80rpx;
   line-height: 80rpx;
+  background: var(--white);
 }
 
 .tab-box {

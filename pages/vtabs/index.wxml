@@ -1,4 +1,4 @@
-<view class="op-bg--white vtabs-header op-padding-lr--20">
+<view class="vtabs-header op-padding-lr--20">
   <text class="opIcon opIcon-menu op-text--48" bindtap="showScreenDialog"></text>
 </view>
 
@@ -32,13 +32,13 @@
             <view class="op-flex op-align--center op-justify--between op-margin-bottom--10">
               <view class="op-text--bold op-text--28">{{listItem.title}}</view>
               <view>
-                <text class="opIcon opIcon-more op-text--48 op-text--gray"></text>
+                <text class="opIcon opIcon-more op-text--48 op-text--regular"></text>
               </view>
             </view>
             <view>
               <view class="data-item op-margin-bottom--20 op-text--center" wx:for="{{listItem.data}}" wx:for-item="dataItem" wx:for-index="dataIdx" wx:key="dataIdx">
-                <image class="data-item--cover op-bg--grayWhite op-margin-bottom--10" src="{{imghttp}}{{dataItem.cover}}" mode="aspectFit" lazy-load></image>
-                <view class="op-text--24 op-text--darkGray">{{dataItem.title}}</view>
+                <image class="data-item--cover op-bg--base op-margin-bottom--10" src="{{imghttp}}{{dataItem.cover}}" mode="aspectFit" lazy-load></image>
+                <view class="op-text--24 op-text--secondary">{{dataItem.title}}</view>
               </view>
             </view>
           </view>
@@ -71,13 +71,13 @@
           <view class="op-flex op-align--center op-justify--between op-margin-bottom--10">
             <view class="op-text--bold op-text--28">{{listItem.title}}</view>
             <view>
-              <text class="opIcon opIcon-more op-text--48 op-text--gray"></text>
+              <text class="opIcon opIcon-more op-text--48 op-text--regular"></text>
             </view>
           </view>
           <view>
             <view class="data-item op-margin-bottom--20 op-text--center" wx:for="{{listItem.data}}" wx:for-item="dataItem" wx:for-index="dataIdx" wx:key="dataIdx">
-              <image class="data-item--cover op-bg--grayWhite op-margin-bottom--10" src="{{imghttp}}{{dataItem.cover}}" mode="aspectFit" lazy-load></image>
-              <view class="op-text--24 op-text--darkGray">{{dataItem.title}}</view>
+              <image class="data-item--cover op-bg--base op-margin-bottom--10" src="{{imghttp}}{{dataItem.cover}}" mode="aspectFit" lazy-load></image>
+              <view class="op-text--24 op-text--secondary">{{dataItem.title}}</view>
             </view>
           </view>
         </view>

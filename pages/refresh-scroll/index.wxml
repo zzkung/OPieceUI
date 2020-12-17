@@ -4,7 +4,6 @@
     enable-back-to-top="{{true}}"
     empty-show="{{emptyShow}}"
     list-count="{{listData.length}}"
-    bottom-size="{{54}}"
     info-text="{{infoText}}"
     bind:refresh="refresh"
     bind:more="more"
@@ -28,6 +27,17 @@
   </refresh-scroll>
 </demo-block>
 
-<demo-param custom-class="custom-param" title="参数配置">
+<view class="btn-switch" bindtap="showScreenDialog"></view>
 
-</demo-param>
+<mp-half-screen-dialog 
+  extClass="half-screen-dialog"
+  show="{{showParam}}"
+  mask="{{true}}"
+  closabled="{{false}}"
+  maskClosable="{{true}}" 
+>
+  <view slot="title">参数配置</view>
+  <view slot="desc">
+    <demo-param-item params="{{params}}" bindradiochange="radioChange"></demo-param-item>
+  </view>
+</mp-half-screen-dialog>

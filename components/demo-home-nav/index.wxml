@@ -8,8 +8,8 @@
       data-url="/pages{{ item.path }}/index"
       bind:tap="onClick"
     >
-      <view>{{ item.title }} <text class="op-text--red op-text--20" wx:if="{{ item.remark }}">（{{ item.remark }}）</text></view>
-      <text class="opIcon opIcon-arrow-right op-text--32 op-text--bold op-text--lightGray demo-home-nav__icon"></text>
+      <view>{{ item.title }} <text class="op-color--danger op-text--20" wx:if="{{ item.remark }}">（{{ item.remark }}）</text></view>
+      <text class="opIcon opIcon-arrow-right op-text--32 op-text--bold op-text--placeholder demo-home-nav__icon"></text>
     </view>
   </view>
 </view>
