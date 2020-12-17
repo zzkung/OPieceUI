@@ -1,3 +1,33 @@
 page {
   background: var(--white);
 }
+
+.color-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.color-item {
+  height: 120rpx;
+  padding: 10rpx 30rpx;
+}
+.color-item:first-child {
+  width: 100%;
+}
+.color-item:not(:first-child) {
+  flex: 1;
+}
+.title,
+.sub-title {
+  color: var(--white);
+}
+.color-item:last-child .title,
+.color-item:last-child .sub-title {
+  color: var(--darkGray);
+}
+.sub-title {
+  opacity: .9;
+}
