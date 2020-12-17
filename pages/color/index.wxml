@@ -2,7 +2,7 @@
 
 <demo-block title="主色">
   <view class="color-box">
-    <view class="color-item" wx:for="{{ lists.mainColor }}" wx:key="item" style="background: {{ item.colorValue }}">
+    <view class="color-item" wx:for="{{ lists.mainColor }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
       <view class="title">{{ item.colorId }}</view>
       <view class="sub-title">{{ item.colorValue }}</view>
     </view>
