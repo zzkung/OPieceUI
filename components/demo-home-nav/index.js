@@ -10,7 +10,7 @@ Component({
   methods: {
     onClick(event) {
       wx.navigateTo({
-        url: event.target.dataset.url
+        url: event.currentTarget.dataset.url
       });
     }
   }

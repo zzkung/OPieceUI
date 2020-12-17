@@ -14,4 +14,4 @@ Component({
       this.triggerEvent('radiochange', { value })
     }
   }
-});
+})

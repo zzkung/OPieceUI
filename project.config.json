@@ -71,6 +71,11 @@
     "miniprogram": {
       "list": [
         {
+          "name": "Color 色彩",
+          "pathName": "pages/color/index",
+          "scene": null
+        },
+        {
           "name": "Icon 图标",
           "pathName": "pages/icon/index",
           "query": "",
@@ -103,6 +108,7 @@
         {
           "name": "服务协议",
           "pathName": "pages/service-agreement/index",
+          "query": "",
           "scene": null
         }
       ]

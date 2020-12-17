@@ -1,18 +1,12 @@
 <view class="demo-home">
-  <view
-    class="demo-home__title"
-  >
-    <image mode="aspectFit" class="demo-home__image" src="{{imghttp}}/logo.png" />
-    <view class="demo-home__text custom-font">OPiece UI</view>
-  </view>
-  <view class="demo-home__desc">
-    OPiece小程序 UI 组件库
-  </view>
-  <view
-    wx:for="{{ list }}"
-    wx:for-item="group"
-    wx:key="index"
-  >
-    <demo-home-nav group="{{ group }}" />
+  <demo-header title="OPiece UI" sub-title="OPiece小程序 UI 组件库" icon="{{imghttp}}/logo.png" custom-font />
+  <view class="demo-home__content">
+    <view
+      wx:for="{{ list }}"
+      wx:for-item="group"
+      wx:key="index"
+    >
+      <demo-home-nav group="{{ group }}" />
+    </view>
   </view>
 </view>

@@ -5,4 +5,4 @@ Component({
   },
 
   externalClasses: ['custom-class']
-});
+})

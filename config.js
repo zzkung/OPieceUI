@@ -5,6 +5,12 @@ export default [
     icon: '',
     list: [
       {
+        path: '/color',
+        title: 'Color 色彩',
+        icon: '',
+        remark: '持续更新'
+      },
+      {
         path: '/icon',
         title: 'Icon 图标',
         icon: '',

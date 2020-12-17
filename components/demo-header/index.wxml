@@ -1,0 +1,9 @@
+<view class="demo-header">
+  <view
+    class="demo-header__title"
+  >
+    <image mode="aspectFit" class="demo-header__image" wx:if="{{ icon }}" src="{{ icon }}" lazy-load />
+    <view class="demo-header__text {{ customFont ? 'custom-font' : '' }}" wx:if="{{ title }}">{{ title }}</view>
+  </view>
+  <view class="demo-header__desc" wx:if="{{ subTitle }}">{{ subTitle }}</view>
+</view>
