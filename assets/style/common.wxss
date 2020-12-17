@@ -1,3 +1,40 @@
+/**
+ * BEM 命名规范
+ * http://getbem.com/naming/
+ * Bem 是块（block）、元素（element）、修饰符（modifier）的简写
+ * 
+ * - 中划线 ：仅作为连字符使用，表示某个块或者某个子元素的多单词之间的连接记号
+ * __ 双下划线：双下划线用来连接块和块的子元素
+ * _ 单下划线：单下划线用来描述一个块或者块的子元素的一种状态
+ * 
+ * .op-switch
+ * .op-switch__label
+ * .op-switch__label--right
+ * 
+ * 
+ * Brand Color
+ * op-color__primary
+ * op-color__primary--dark
+ * Primary、Dark、Disabled、Light
+ * 
+ * Functional Color
+ * Success、Dark、Disabled、Light
+ * Warning、Dark、Disabled、Light
+ * Danger、Dark、Disabled、Light
+ * Info、Dark、Disabled、Light
+ * 
+ * Font Color
+ * op-color__text--primary
+ * primary、Regular、Secondary、Placeholder
+ * 
+ * Border Color
+ * Base、Light、Lighter、Extralight
+ * 
+ * Background Color
+ * Base
+ * 
+ */
+
 page{
   min-height:100vh;
   background:var(--grayWhite);

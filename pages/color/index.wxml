@@ -1,14 +1,48 @@
 <demo-header title="Color 色彩" sub-title="使用一套特定的调色板来规定颜色，为你所搭建的产品提供一致的外观视觉感受" />
 
-<demo-block title="主色">
-  <view class="color-box">
-    <view class="color-item" wx:for="{{ lists.mainColor }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
-      <view class="title">{{ item.colorId }}</view>
-      <view class="sub-title">{{ item.colorValue }}</view>
+<view class="container">
+  <demo-block title="主色">
+    <view class="color-box" wx:for="{{ lists.brandColor }}" wx:for-item="listItem" wx:key="index">
+      <view class="color-item" wx:for="{{ listItem }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
+        <view class="title">{{ item.colorId }}</view>
+        <view class="sub-title">{{ item.colorValue }}</view>
+      </view>
     </view>
-  </view>
-</demo-block>
+  </demo-block>
 
-<demo-block title="辅色">
+  <demo-block title="辅色">
+    <view class="color-box" wx:for="{{ lists.functionalColor }}" wx:for-item="listItem" wx:key="index">
+      <view class="color-item" wx:for="{{ listItem }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
+        <view class="title">{{ item.colorId }}</view>
+        <view class="sub-title">{{ item.colorValue }}</view>
+      </view>
+    </view>
+  </demo-block>
 
-</demo-block>
+  <demo-block title="文字色">
+    <view class="color-box" wx:for="{{ lists.fontColor }}" wx:for-item="listItem" wx:key="index">
+      <view class="color-item" wx:for="{{ listItem }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
+        <view class="title">{{ item.colorId }}</view>
+        <view class="sub-title">{{ item.colorValue }}</view>
+      </view>
+    </view>
+  </demo-block>
+
+  <demo-block title="边框色">
+    <view class="color-box" wx:for="{{ lists.borderColor }}" wx:for-item="listItem" wx:key="index">
+      <view class="color-item" wx:for="{{ listItem }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
+        <view class="title">{{ item.colorId }}</view>
+        <view class="sub-title">{{ item.colorValue }}</view>
+      </view>
+    </view>
+  </demo-block>
+
+  <demo-block title="背景色">
+    <view class="color-box" wx:for="{{ lists.backgroundColor }}" wx:for-item="listItem" wx:key="index">
+      <view class="color-item" wx:for="{{ listItem }}" wx:key="item" style="background: {{ item.colorValue }}" data-value="{{ item.colorValue }}" bindtap="handleClipboard">
+        <view class="title">{{ item.colorId }}</view>
+        <view class="sub-title">{{ item.colorValue }}</view>
+      </view>
+    </view>
+  </demo-block>
+</view>

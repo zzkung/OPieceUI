@@ -2,16 +2,23 @@ page {
   background: var(--white);
 }
 
+.container {
+  padding: 0 15px 15px;
+}
+
 .color-box {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 15px;
+  margin-bottom: 15px;
   border-radius: 6px;
   overflow: hidden;
 }
+.color-box:last-child {
+  margin-bottom: 0;
+}
 
 .color-item {
-  height: 120rpx;
+  height: 110rpx;
   padding: 10rpx 30rpx;
 }
 .color-item:first-child {
