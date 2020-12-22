@@ -45,6 +45,11 @@ export default [
         title: 'Category 分类模板',
         icon: '',
         remark: ''
+      }, {
+        path: '/signature-temp',
+        title: 'Signature 电子签名',
+        icon: '',
+        remark: ''
       }
     ],
   },

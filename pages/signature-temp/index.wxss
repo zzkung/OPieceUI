@@ -1,0 +1,10 @@
+.signature-container .canvas-area {
+  width: 100%;
+  height: calc(100vh - 120rpx);
+}
+.signature-container .action-bar {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.1)
+}

@@ -6,6 +6,7 @@
     "pages/refresh-scroll/index",
     "pages/vtabs/index",
     "pages/category-temp/index",
+    "pages/signature-temp/index",
     "pages/copyright/index",
     "pages/about/index"
   ],
