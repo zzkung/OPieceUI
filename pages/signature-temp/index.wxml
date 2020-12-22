@@ -5,6 +5,7 @@
     disable-scroll="{{true}}"
     bindtouchstart="handleTouchStart"
     bindtouchmove="handleTouchMove"
+    bindtouchend="handleTouchEnd"
   >
   </canvas>
 

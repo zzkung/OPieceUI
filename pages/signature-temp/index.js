@@ -45,6 +45,7 @@ Page({
   handleTouchStart (e) {
     let { ctx, dpr } = this.data
     let { x, y } = e.changedTouches[0]
+    ctx.beginPath()
     ctx.moveTo(x * dpr, y * dpr)
   },
   
@@ -57,10 +58,14 @@ Page({
     ctx.moveTo(x * dpr, y * dpr)
   },
 
+  handleTouchEnd (e) {
+    console.log('手指触摸动作结束')
+  },
+
   // 清除画布
   handleClear () {
     let { ctx, canvasWidth, canvasHeight } = this.data
-    ctx.clearRect(0, 0, canvasWidth, canvasHeight)  
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight)
   },
 
   // 导出图片

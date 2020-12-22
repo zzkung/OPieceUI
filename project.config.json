@@ -37,14 +37,14 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
+    "enableEngineNative": false,
+    "userConfirmedBundleSwitch": false,
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
@@ -74,6 +74,7 @@
         {
           "name": "Color 色彩",
           "pathName": "pages/color/index",
+          "query": "",
           "scene": null
         },
         {
@@ -98,6 +99,11 @@
           "name": "Category 分类模板",
           "pathName": "pages/category-temp/index",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "电子签名",
+          "pathName": "pages/signature-temp/index",
           "scene": null
         },
         {
