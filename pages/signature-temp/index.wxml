@@ -1,5 +1,4 @@
 <view class="signature-container">
-  <view class="canvas-placeholder">{{canvasPlaceholder}}</view>
   <canvas type="2d"
     class="canvas-area" 
     id="signatureCanvas"
@@ -9,6 +8,7 @@
     bindtouchend="handleTouchEnd"
   >
   </canvas>
+  <!-- <view class="canvas-placeholder">{{canvasPlaceholder}}</view> -->
 </view>
 <view class="action-bar">
   <button type="warn" plain bindtap="handleClear">清除</button>
