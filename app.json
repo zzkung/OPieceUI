@@ -5,6 +5,7 @@
     "pages/icon/index",
     "pages/refresh-scroll/index",
     "pages/vtabs/index",
+    "pages/auth/index",
     "pages/category-temp/index",
     "pages/signature-temp/index",
     "pages/copyright/index",

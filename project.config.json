@@ -96,6 +96,12 @@
           "scene": null
         },
         {
+          "name": "Auth 授权",
+          "pathName": "pages/auth/index",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "Category 分类模板",
           "pathName": "pages/category-temp/index",
           "query": "",

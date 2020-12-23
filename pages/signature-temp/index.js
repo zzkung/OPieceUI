@@ -1,5 +1,6 @@
 Page({
   data: {
+    canvasPlaceholder: '签名区域',
     canvasWidth: 0,
     canvasHeight: 0,
     dpr: 0,
@@ -29,22 +30,14 @@ Page({
       dpr,
       canvas,
       ctx
-    }, () => {
-      this.drawPlaceholderText(ctx, canvas.width, canvas.height)
     })
-  },
-
-  drawPlaceholderText (ctx, width, height) {
-    let drawTxt =  '签名区域'
-    ctx.fillStyle = '#c0c4cc'
-    ctx.font = '40px sans-serif'
-    ctx.fillText(drawTxt, Math.ceil((width - ctx.measureText(drawTxt).width) / 2), Math.ceil(height / 2) - 20)
   },
 
   // 记录绘制起点
   handleTouchStart (e) {
     let { ctx, dpr } = this.data
     let { x, y } = e.changedTouches[0]
+    this.setData({ canvasPlaceholder: '' })
     ctx.beginPath()
     ctx.moveTo(x * dpr, y * dpr)
   },
@@ -66,6 +59,7 @@ Page({
   handleClear () {
     let { ctx, canvasWidth, canvasHeight } = this.data
     ctx.clearRect(0, 0, canvasWidth, canvasHeight)
+    this.setData({ canvasPlaceholder: '签名区域' })
   },
 
   // 导出图片

@@ -37,6 +37,18 @@ export default [
     ],
   },
   {
+    groupName: '工具',
+    icon: '',
+    list: [
+      {
+        path: '/auth',
+        title: 'Auth 授权',
+        icon: '',
+        remark: ''
+      }
+    ],
+  },
+  {
     groupName: '通用模板',
     icon: '',
     list: [
