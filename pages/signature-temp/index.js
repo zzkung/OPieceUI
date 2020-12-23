@@ -101,10 +101,17 @@ Page({
 
   // 导出图片
   handleSubmit () {
+    let { canvas, canvasWidth, canvasHeight, drawNum } = this.data
+    if (drawNum < 1) {
+      wx.showToast({
+        title: '您还没有签名！',
+        icon: 'error'
+      })
+      return
+    }
     wx.showLoading({
       title: '正在导出签名',
     })
-    let { canvas, canvasWidth, canvasHeight } = this.data
     this.canvasToImage(canvas, canvasWidth, canvasHeight)
   },
 
@@ -132,7 +139,7 @@ Page({
                 console.log(res)
                 wx.showModal({
                   title: '',
-                  content: '签名已经保存到相册!',
+                  content: '签名已经保存到相册！',
                   showCancel: false,
                   success() {}
                 })
