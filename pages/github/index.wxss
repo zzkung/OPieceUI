@@ -15,7 +15,5 @@
 }
 
 .attention-btn {
-  width: 200rpx;
-  height: 60rpx;
-  line-height: 60rpx;
+  font-size: 28rpx!important;
 }
