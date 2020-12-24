@@ -66,6 +66,18 @@ export default [
     ],
   },
   {
+    groupName: '其他',
+    icon: '',
+    list: [
+      {
+        path: '/github',
+        title: 'GitHub',
+        icon: '',
+        remark: ''
+      }
+    ],
+  },
+  {
     groupName: '关于',
     icon: '',
     list: [
