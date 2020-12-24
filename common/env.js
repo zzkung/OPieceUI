@@ -1,16 +1,14 @@
-// dev,prod
-export const env = 'dev'
-export const dev_server = 'local'
+// local,real
+export const env = 'local'
 
-export const host_dev = getHost_dev()
-export const host_real = 'https://blog.zzkung.com'
-export const imghost = host_real
-export const imghttp = host_real + '/AppImg/OPieceImg'
+export const host = getHost_dev()
+export const imghost = getHost_dev()
+export const imghttp = getHost_dev() + '/AppImg/OPieceImg'
 
 export const smt = []
 
 function getHost_dev() {
-  switch (dev_server) {
+  switch (env) {
     case 'local':
       return 'https://blog.zzkung.com'
     case 'real':

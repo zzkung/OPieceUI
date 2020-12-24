@@ -1,1 +1,21 @@
-/* pages/github/index.wxss */
+.list-item {
+  border-radius: 8rpx;
+  background: var(--white)
+}
+.item-cover {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.item-cover image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.attention-btn {
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}

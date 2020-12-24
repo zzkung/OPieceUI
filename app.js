@@ -8,6 +8,7 @@ App({
 
   globalData: {
     env: cEnv.env,
+    url: cEnv.host,
     imghost: cEnv.imghost,
     imghttp: cEnv.imghttp
   }

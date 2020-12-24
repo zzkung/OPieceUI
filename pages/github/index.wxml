@@ -1,2 +1,19 @@
-<!--pages/github/index.wxml-->
-<text>pages/github/index.wxml</text>
+<view>
+  <view class="list-item op-flex op-align--center op-padding--20 op-margin--20" wx:for="{{userList}}" wx:key="index">
+    <view class="item-cover">
+      <image src="{{item.avatar_url}}" lazy-load></image>
+    </view>
+    <view class="op-flex--sub op-flex op-align--center op-margin-left--20">
+      <view class="op-margin-right--20">
+        <view>{{item.login}}</view>
+        <view>
+          <text class="opIcon opIcon-attention"></text>
+          <text>{{item.url}}</text>
+        </view>
+      </view>
+      <view>
+        <button class="op-init--btn attention-btn">关注</button>
+      </view>
+    </view>
+  </view>
+</view>

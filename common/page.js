@@ -6,7 +6,6 @@ export default function(options = {}) {
       })
     },
     onShareAppMessage() {
-      console.log('page.js')
       return {
         title: 'OPiece UI 组件库'
       }

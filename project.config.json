@@ -114,6 +114,11 @@
           "scene": null
         },
         {
+          "name": "GitHub",
+          "pathName": "pages/github/index",
+          "scene": null
+        },
+        {
           "name": "版权信息",
           "pathName": "pages/copyright/index",
           "query": "",
