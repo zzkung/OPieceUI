@@ -8,7 +8,6 @@
     bindtouchend="handleTouchEnd"
   >
   </canvas>
-  <!-- <view class="canvas-placeholder">{{canvasPlaceholder}}</view> -->
 </view>
 <view class="action-bar">
   <button type="warn" plain bindtap="handleClear">清除</button>

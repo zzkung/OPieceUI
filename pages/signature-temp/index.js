@@ -2,7 +2,7 @@ import auth from '../auth/auth'
 
 Page({
   data: {
-    canvasPlaceholder: '签名区域',
+    canvasPlaceholder: '请在空白处签字',
     canvasWidth: 0,
     canvasHeight: 0,
     dpr: 0,
@@ -48,17 +48,17 @@ Page({
 
   // 绘制提示文字
   drawPlaceholderText () {
-    let { ctx, canvasPlaceholder, canvasWidth, canvasHeight } = this.data
-    ctx.font = '40px sans-serif',
+    let { ctx, canvasPlaceholder, canvasWidth, canvasHeight, dpr } = this.data
+    ctx.font = `${20 * dpr}px sans-serif`,
     ctx.fillStyle = '#c0c4cc'
     ctx.fillText(canvasPlaceholder, Math.ceil((canvasWidth - ctx.measureText(canvasPlaceholder).width) / 2), Math.ceil(canvasHeight / 2))
   },
 
   // 绘制覆盖提示文字的矩形
   drawRect () {
-    let { ctx, canvasWidth, canvasHeight, canvasPlaceholder } = this.data
+    let { ctx, canvasWidth, canvasHeight, canvasPlaceholder, dpr } = this.data
     ctx.fillStyle = '#fff'
-    ctx.fillRect(Math.ceil((canvasWidth - ctx.measureText(canvasPlaceholder).width) / 2), Math.ceil(canvasHeight / 2) - 40, ctx.measureText(canvasPlaceholder).width, 50)
+    ctx.fillRect(Math.ceil((canvasWidth - ctx.measureText(canvasPlaceholder).width) / 2), Math.ceil(canvasHeight / 2) - (20 * dpr), ctx.measureText(canvasPlaceholder).width, (25 * dpr))
   },
 
   // 记录绘制起点
@@ -157,5 +157,10 @@ Page({
         }
       }
     })
+  },
+  // 监听屏幕旋转
+  onResize (e) {
+    this.handleClear()
+    this.onShow()
   }
 })

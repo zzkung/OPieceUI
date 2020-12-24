@@ -110,6 +110,7 @@
         {
           "name": "电子签名",
           "pathName": "pages/signature-temp/index",
+          "query": "",
           "scene": null
         },
         {

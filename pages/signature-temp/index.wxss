@@ -1,7 +1,7 @@
 .signature-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - 120rpx);
+  height: calc(100vh - 60px);
 }
 .signature-container .canvas-placeholder {
   position: fixed;
@@ -18,6 +18,16 @@
 .action-bar {
   display: flex;
   align-items: center;
-  height: 120rpx;
-  box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.1)
+  justify-content: center;
+  height: 60px;
+  padding: 0 30rpx;
+  box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.action-bar button {
+  height: 40px;
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 20rpx!important;
 }
