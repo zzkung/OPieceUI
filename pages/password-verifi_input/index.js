@@ -6,7 +6,7 @@ Page({
   data: {
     showParam: false,
     params: paramConfig.pv_inputParam,
-    paramCheckeds: [0] // 暂时无效
+    paramCheckeds: [0]
   },
   radioChange (e) {
     console.log(e)

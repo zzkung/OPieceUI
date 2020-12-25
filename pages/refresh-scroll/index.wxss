@@ -46,14 +46,3 @@
   color: #666666;
   font-size: 24rpx;
 }
-
-.btn-switch {
-  position: fixed;
-  right: 0;
-  bottom: 300rpx;
-  width: 100rpx;
-  height: 80rpx;
-  border-radius: 100rpx 0 0 100rpx;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
-}

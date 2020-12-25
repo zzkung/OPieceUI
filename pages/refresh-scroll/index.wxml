@@ -27,6 +27,8 @@
   </refresh-scroll>
 </demo-block>
 
-<view class="btn-switch" bindtap="showScreenDialog"></view>
+<view class="btn-switch" bindtap="showScreenDialog">
+  <text class="opIcon opIcon-setup op-text--56 op-color--success"></text>
+</view>
 
 <demo-param show-param="{{showParam}}" params="{{params}}" bindradiochange="radioChange" />
