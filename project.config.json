@@ -9,6 +9,10 @@
       {
         "type": "folder",
         "value": "docs"
+      },
+      {
+        "type": "regexp",
+        "value": "\\.less$"
       }
     ]
   },

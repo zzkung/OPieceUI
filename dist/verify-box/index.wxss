@@ -1,9 +1,8 @@
 .op-verify--box {
   display: flex;
-
   height: 100rpx;
 }
-.op-verify--item {
+.op-verify--box .op-verify--item {
   position: relative;
   flex: 1;
   display: flex;
@@ -11,7 +10,7 @@
   justify-content: center;
   background-color: #ebeef5;
 }
-.op-verify--item::after {
+.op-verify--box .op-verify--item::after {
   position: absolute;
   content: ' ';
   top: -50%;
@@ -22,6 +21,6 @@
   border-left-width: 1px;
   transform: scale(0.5);
 }
-.op-verify--item:first-child::after {
+.op-verify--box .op-verify--item:first-child::after {
   border-left-width: 0;
 }
