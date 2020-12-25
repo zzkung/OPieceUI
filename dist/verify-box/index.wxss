@@ -4,5 +4,24 @@
   height: 100rpx;
 }
 .op-verify--item {
+  position: relative;
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebeef5;
+}
+.op-verify--item::after {
+  position: absolute;
+  content: ' ';
+  top: -50%;
+  right: -50%;
+  left: -50%;
+  bottom: -50%;
+  border: 0 solid #fff;
+  border-left-width: 1px;
+  transform: scale(0.5);
+}
+.op-verify--item:first-child::after {
+  border-left-width: 0;
 }

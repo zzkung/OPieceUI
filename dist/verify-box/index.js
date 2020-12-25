@@ -5,7 +5,8 @@ Component({
     multipleSlots: true
   },
   properties: {
-    length: { type: Number, value: 4, optionalTypes: [Number, String] }
+    length: { type: Number, value: 4, optionalTypes: [Number, String] },
+    defaultValue: { type: String, value: '334' }
   },
   methods: {
     

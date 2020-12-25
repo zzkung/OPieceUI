@@ -4,6 +4,7 @@
       wx:for="{{length}}" 
       wx:key="index"
     >
+      <text>{{defaultValue[index]}}</text>
     </view>
   </view>
 </view>
