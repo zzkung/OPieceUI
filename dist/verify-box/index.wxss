@@ -1,0 +1,8 @@
+.op-verify--box {
+  display: flex;
+
+  height: 100rpx;
+}
+.op-verify--item {
+  flex: 1;
+}

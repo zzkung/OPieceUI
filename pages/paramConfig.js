@@ -24,17 +24,7 @@ export default {
       ]
     }
   ],
-  pv_inputParam: [
-    {
-      title: '布局选择',
-      remark: '',
-      items: [
-        { name: '网格布局', checked: true },
-        { name: '方框布局' },
-        { name: '中划线' },
-        { name: '下划线' }
-      ]
-    }, {
+  pv_inputParam: [{
       title: '输入长度',
       remark: '最长支持8个长度',
       items: [

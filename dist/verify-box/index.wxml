@@ -1,0 +1,9 @@
+<view>
+  <view class="op-verify--box">
+    <view class="op-verify--item"
+      wx:for="{{length}}" 
+      wx:key="index"
+    >
+    </view>
+  </view>
+</view>

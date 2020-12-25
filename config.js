@@ -35,7 +35,7 @@ export default [
         remark: ''
       },
       {
-        path: '/password-verifi_input',
+        path: '/verify-box',
         title: '密码/验证码输入',
         icon: '',
         remark: ''

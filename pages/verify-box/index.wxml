@@ -1,9 +1,19 @@
 <demo-header title="P&VCode 密码和验证码输入框" sub-title="使用一套特定的调色板来规定颜色，为你所搭建的产品提供一致的外观视觉感受" />
 
 <demo-block title="网格布局">
-  <view>
+  <op-verify-box length="4" />
+</demo-block>
 
-  </view>
+<demo-block title="方框布局">
+  <op-verify-box />
+</demo-block>
+
+<demo-block title="中划线">
+  <op-verify-box />
+</demo-block>
+
+<demo-block title="下划线">
+  <op-verify-box />
 </demo-block>
 
 <view class="btn-switch" bindtap="showScreenDialog">

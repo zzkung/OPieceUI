@@ -5,7 +5,7 @@
     "pages/icon/index",
     "pages/refresh-scroll/index",
     "pages/vtabs/index",
-    "pages/password-verifi_input/index",
+    "pages/verify-box/index",
     "pages/keyboard/index",
     "pages/auth/index",
     "pages/category-temp/index",

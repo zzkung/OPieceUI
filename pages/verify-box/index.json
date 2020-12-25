@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "op-verify-box": "../../dist/verify-box"
+  }
+}

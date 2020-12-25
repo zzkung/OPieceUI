@@ -97,7 +97,8 @@
         },
         {
           "name": "密码/验证码输入",
-          "pathName": "pages/password-verifi_input/index",
+          "pathName": "pages/verify-box/index",
+          "query": "",
           "scene": null
         },
         {
