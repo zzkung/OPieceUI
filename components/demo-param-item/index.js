@@ -1,12 +1,15 @@
 Component({
+  externalClasses: ['custom-class'],
+  options: {
+    addGlobalClass: true,
+    multipleSlots: true
+  },
   properties: {
     params: {
       type: Array,
       value: []
     }
   },
-
-  externalClasses: ['custom-class'],
 
   methods: {
     radioChange(e) {

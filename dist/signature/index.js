@@ -1,4 +1,5 @@
 Component({
+    externalClasses: ['custom-class'],
     options: {
         addGlobalClass: true,
         pureDataPattern: /^_/,

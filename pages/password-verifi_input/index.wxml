@@ -1,0 +1,3 @@
+<button bindtap="showScreenDialog">展示</button>
+
+<demo-param show-param="{{showParam}}" params="{{params}}" bindradiochange="radioChange" />
