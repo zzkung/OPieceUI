@@ -1,0 +1,7 @@
+<view class="{{show ? 'op-show' :'op-hidden'}}">
+  <view class="op-mask" data-type="tap" catch:touchmove="onMaskMouseMove" bindtap="close"></view>
+  <view class="op-half-screen--keyboard">
+    <view class="op-half-screen--keyboard-hd"></view>
+    <view class="op-half-screen--keyboard-bd"></view>
+  </view>
+</view>

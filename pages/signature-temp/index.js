@@ -1,3 +1,4 @@
+import Page from '../../common/page'
 import auth from '../auth/auth'
 
 Page({

@@ -96,6 +96,17 @@
           "scene": null
         },
         {
+          "name": "密码/验证码输入",
+          "pathName": "pages/password-verifi_input/index",
+          "scene": null
+        },
+        {
+          "name": "Keyboard 键盘",
+          "pathName": "pages/keyboard/index",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "Auth 授权",
           "pathName": "pages/auth/index",
           "query": "",
@@ -116,6 +127,7 @@
         {
           "name": "GitHub",
           "pathName": "pages/github/index",
+          "query": "",
           "scene": null
         },
         {

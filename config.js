@@ -33,6 +33,18 @@ export default [
         title: 'vtabs 纵向选项卡',
         icon: '',
         remark: ''
+      },
+      {
+        path: '/password-verifi_input',
+        title: '密码/验证码输入',
+        icon: '',
+        remark: ''
+      },
+      {
+        path: '/keyboard',
+        title: 'Keyboard 键盘',
+        icon: '',
+        remark: ''
       }
     ],
   },
