@@ -1,0 +1,40 @@
+page {
+  background: var(--white);
+}
+
+.container {
+  padding: 0 15px 15px;
+  .color-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    .color-item {
+      height: 110rpx;
+      padding: 10rpx 30rpx;
+      .title,
+      .sub-title {
+        color: var(--white);
+      }
+      .sub-title {
+        opacity: .9;
+      }
+      &:first-child {
+        width: 100%;
+      }
+      &:not(:first-child) {
+        flex: 1;
+      }
+      &:last-child {
+        .title,
+        .sub-title {
+          color: var(--darkGray);
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

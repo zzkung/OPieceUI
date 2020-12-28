@@ -3,6 +3,7 @@
   color: rgba(69, 90, 100, 0.6);
   font-size: 14px;
 }
+
 .demo-home-nav__block {
   position: relative;
   display: flex;
@@ -15,16 +16,16 @@
   background: var(--bg-base);
   border-radius: 6px;
   transition: background 0.3s;
-}
-.demo-home-nav__block .demo-home-nav__block:hover {
-  background: #eaecef;
-}
-.demo-home-nav__block .demo-home-nav__block:active {
-  background: #e2e4e9;
-}
-.demo-home-nav__block .demo-home-nav__icon {
-  position: absolute !important;
-  top: 50%;
-  right: 20rpx;
-  transform: translateY(-50%);
+  .demo-home-nav__block:hover {
+    background: darken(#f3f4f6, 3%);
+  }
+  .demo-home-nav__block:active {
+    background: darken(#f3f4f6, 6%);
+  }
+  .demo-home-nav__icon {
+    position: absolute !important;
+    top: 50%;
+    right: 20rpx;
+    transform: translateY(-50%);
+  }  
 }

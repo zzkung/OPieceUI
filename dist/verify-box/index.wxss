@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ebeef5;
+  background-color: var(--bg-base);
 }
 .op-verify--box .op-verify--item::after {
   position: absolute;

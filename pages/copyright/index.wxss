@@ -2,13 +2,11 @@
   min-height: 100vh;
   background: var(--white);
 }
-
-.th,
-.td {
+.table .th,
+.table .td {
   width: calc(100vw / 3);
   padding: 15rpx 20rpx;
 }
-
-.text-hover {
-  opacity: .8;
+.table .text-hover {
+  opacity: 0.8;
 }

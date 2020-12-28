@@ -2,32 +2,26 @@
   background: var(--white);
   margin-top: 20rpx;
 }
-
-.cell {
+.cells .cell {
   display: flex;
   padding: 20rpx;
 }
-
-.cell:not(:last-child) {
+.cells .cell:not(:last-child) {
   border-bottom: 1rpx solid #ebedf0;
 }
-
-.cell__hd {
+.cells .cell .cell__hd {
   font-size: 0;
 }
-
-.cell__hd image {
+.cells .cell .cell__hd image {
   width: 160rpx;
   height: 160rpx;
   margin-right: 20rpx;
   border-radius: 12rpx;
 }
-
-.cell__bd {
+.cells .cell .cell__bd {
   flex: 1;
 }
-
-.cell__bd .name {
+.cells .cell .cell__bd .name {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -36,8 +30,7 @@
   font-size: 28rpx;
   margin-bottom: 12rpx;
 }
-
-.cell__bd .des {
+.cells .cell .cell__bd .des {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
