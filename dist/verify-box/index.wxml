@@ -4,7 +4,8 @@
       wx:for="{{length}}" 
       wx:key="index"
     >
-      <text>{{defaultValue[index]}}</text>
+      <text></text>
+      <view class="op-verify--cursor" hidden="{{index!=0}}"></view>
     </view>
   </view>
 </view>

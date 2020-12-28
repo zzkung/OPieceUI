@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-base);
+  background: var(--bg-base);
 }
 .op-verify--box .op-verify--item::after {
   position: absolute;
@@ -23,4 +23,25 @@
 }
 .op-verify--box .op-verify--item:first-child::after {
   border-left-width: 0;
+}
+.op-verify--box .op-verify--cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 40%;
+  background: #333;
+  transform: translate(-50%, -50%);
+  animation: 1s cursor-flicker infinite;
+}
+@keyframes cursor-flicker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

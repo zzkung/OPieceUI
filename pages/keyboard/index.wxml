@@ -1,1 +1,3 @@
+<button bindtap="handleKeyboard">打开键盘</button>
+
 <op-keyboard show="{{showKeyboard}}" />

@@ -13,7 +13,7 @@
             id="vtabs-item__{{index}}"
             class="vtabs-bar__item"
             data-index="{{index}}"
-            style="width: {{computed.addUtil(tabBarWidth)}};background-color: {{activeTab === index ? tabBarActiveBgColor : tabBarInactiveBgColor}}; color: {{activeTab === index ? tabBarActiveTextColor : tabBarInactiveTextColor}}; border-left-color: {{activeTab === index ? tabBarLineColor : tabBarInactiveBgColor}}"
+            style="width: {{computed.addUtil(tabBarWidth)}};background: {{activeTab === index ? tabBarActiveBgColor : tabBarInactiveBgColor}}; color: {{activeTab === index ? tabBarActiveTextColor : tabBarInactiveTextColor}}; border-left-color: {{activeTab === index ? tabBarLineColor : tabBarInactiveBgColor}}"
             bindtap="handleTabClick"
           >
             <view class="vtabs-bar__title {{activeTab === index ? activeClass : ''}}">

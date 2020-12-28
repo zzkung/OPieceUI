@@ -4,5 +4,10 @@ Page({
 
   data: {
     showKeyboard: false
+  },
+  handleKeyboard () {
+    this.setData({
+      showKeyboard: true
+    })
   }
 })

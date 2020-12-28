@@ -73,7 +73,7 @@
   margin: 0 auto;
   width: 4rpx;
   height: 8rpx;
-  background-color: #a5a5a5;
+  background: #a5a5a5;
   border-radius: 4rpx;
   animation: fadeDelay 1.2s infinite ease-in-out both;
 }
@@ -198,7 +198,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: currentColor;
+  background: currentColor;
   opacity: 0.7;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;

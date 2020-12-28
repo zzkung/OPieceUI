@@ -1,13 +1,46 @@
 .op-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
   transition: all .3s;
 }
 
-.op-show .op-mask {
-  opacity: 1;
-  visibility: visible;
+.op-show {
+  .op-mask {
+    opacity: 1;
+    visibility: visible;
+  }
+  .op-half-screen--keyboard {
+    transform: translateY(0);
+  }
 }
 
-.op-hidden .op-mask {
-  opacity: 0;
-  visibility: hidden;
+.op-hidden {
+  .op-mask {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .op-half-screen--keyboard {
+    transform: translateY(100%);
+  }
+}
+
+.op-half-screen--keyboard {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100%;
+  min-height: 50%;
+  max-height: 75%;
+  background: #fff;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  line-height: 1.4;
+  transition: all .3s;
 }

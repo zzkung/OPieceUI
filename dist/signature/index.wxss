@@ -22,7 +22,7 @@
   height: 60px;
   padding: 0 30rpx;
   box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background: #fff;
 }
 .action-bar .bar-btn {
   height: 40px;

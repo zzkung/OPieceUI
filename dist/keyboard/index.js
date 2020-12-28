@@ -8,6 +8,10 @@ Component({
     show: { type: Boolean, value: false }
   },
   methods: {
-    
+    close () {
+      this.setData({
+        show: false
+      })
+    }
   }
 })
