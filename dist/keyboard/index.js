@@ -14,6 +14,14 @@ Component({
   },
   observers: {
     'keyboardType': function (value) {
+      switch (value) {
+        case '':
+          
+          break;
+      
+        default:
+          break;
+      }
       // this.
     }
   },
