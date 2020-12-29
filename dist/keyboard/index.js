@@ -11,18 +11,11 @@ Component({
   options: {
     addGlobalClass: true,
     multipleSlots: true
-  },
+  }, 
+
   observers: {
     'keyboardType': function (value) {
-      switch (value) {
-        case '':
-          
-          break;
-      
-        default:
-          break;
-      }
-      // this.
+      this.keyboardInit(value)
     }
   },
   properties: {
@@ -37,7 +30,25 @@ Component({
   data: {
     keyboardArray: []
   },
+  ready () {
+    this.init()
+  },
   methods: {
+    init () {
+      this.keyboardInit(this.data.keyboardType)
+    },
+    keyboardInit (value) {
+      switch (value) {
+        case 'cartPlate':
+          this.setData({
+            keyboardArray: KEYBOARD_TYPE.cartPlate.concat(KEYBOARD_TYPE.english)
+          })
+          break;
+      
+        default:
+          break;
+      }
+    },
     close () {
       this.setData({
         show: false

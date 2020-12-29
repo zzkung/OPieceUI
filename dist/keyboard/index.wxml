@@ -7,7 +7,13 @@
       <view wx:if="{{ closeButtonText }}" class="op-keyboard--close position-{{ closeButtonPosition }}">{{ closeButtonText }}</view>
     </view>
     <view class="op-half-screen--keyboard-bd">
-      <view ></view>
+      <view 
+        wx:for="{{keyboardArray}}" 
+        wx:key="index"
+        class="op-keyboard--item"
+      >
+        {{item}}
+      </view>
     </view>
   </view>
 </view>
