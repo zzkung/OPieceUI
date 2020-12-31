@@ -9,19 +9,19 @@
 
   <demo-block title="方框布局">
     <view class="op-padding-lr--30">
-      <op-verify-box cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
+      <op-verify-box layout="box" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
     </view>
   </demo-block>
 
   <demo-block title="中划线">
     <view class="op-padding-lr--30">
-      <op-verify-box cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
+      <op-verify-box layout="inLine" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
     </view>
   </demo-block>
 
   <demo-block title="下划线">
     <view class="op-padding-lr--30">
-      <op-verify-box cursor-index="{{cursorIndex}}" bindfocus="verifyFocus" />
+      <op-verify-box layout="underline" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
     </view>
   </demo-block>
 </view>

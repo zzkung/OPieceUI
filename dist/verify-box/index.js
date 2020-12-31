@@ -12,6 +12,7 @@ Component({
     }
   },
   properties: {
+    layout: { type: String, value: 'grid' }, // grid: 网格，box: 方框，inLine: 中划线，underline: 下划线
     length: { type: Number, value: 4, optionalTypes: [Number, String] },
     enableSystemKeyboard: { type: Boolean, value: false },
     cursorIndex: { type: Number, value: 0 }, // 光标位置
