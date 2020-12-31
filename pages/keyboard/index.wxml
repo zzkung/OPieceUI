@@ -1,3 +1,3 @@
 <button bindtap="handleKeyboard">打开键盘</button>
 
-<op-keyboard show="{{showKeyboard}}" title="请输入名字" close-button-text="完成" keyboard-type="cartPlate" />
+<op-keyboard show="{{showKeyboard}}" title="请输入车牌号" close-button-text="完成" keyboard-type="cartPlate" />

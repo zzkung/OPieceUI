@@ -28,7 +28,6 @@
   left: 0;
   z-index: 5000;
   width: 100%;
-  min-height: 50%;
   max-height: 75%;
   background: #F2F3F5;
   overflow: hidden;
@@ -80,8 +79,10 @@
   right: 10rpx;
 }
 .op-half-screen--keyboard .op-half-screen--keyboard-bd {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 30rpx 10rpx;
@@ -89,10 +90,21 @@
   -webkit-overflow-scrolling: touch;
 }
 .op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item {
-  width: 60rpx;
-  padding: 4rpx 10rpx;
+  width: 79rpx;
+  padding: 8rpx 10rpx;
   margin: 6rpx;
-  border-radius: 8rpx;
+  border-radius: 10rpx;
   text-align: center;
   background: #fff;
+}
+.op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item.keyboard-special {
+  position: absolute;
+  bottom: 30rpx;
+  width: 170rpx;
+}
+.op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item.keyboard-special.keyboard-switch {
+  left: 16rpx;
+}
+.op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item.keyboard-special.keyboard-close {
+  right: 16rpx;
 }

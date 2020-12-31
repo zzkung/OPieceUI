@@ -28,7 +28,8 @@ Component({
     zIndex: { type: Number, value: 5000, optionalTypes: [Number, String] }
   },
   data: {
-    keyboardArray: []
+    keyboardArray: [],
+    cartPlateType: 'chinese' // chinese, letter
   },
   ready () {
     this.init()
@@ -41,13 +42,23 @@ Component({
       switch (value) {
         case 'cartPlate':
           this.setData({
-            keyboardArray: KEYBOARD_TYPE.cartPlate.concat(KEYBOARD_TYPE.english)
+            keyboardArray: KEYBOARD_TYPE.cartPlate
           })
           break;
       
         default:
           break;
       }
+    },
+    handleSwitchKeyboard () {
+      let { cartPlateType } = this.data
+      this.setData({
+        keyboardArray: cartPlateType == 'chinese' ? KEYBOARD_TYPE.english : KEYBOARD_TYPE.cartPlate
+      }, () => {
+        this.setData({
+          cartPlateType: cartPlateType == 'chinese' ? 'letter' : 'chinese'
+        })
+      })
     },
     close () {
       this.setData({
