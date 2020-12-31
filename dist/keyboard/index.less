@@ -5,25 +5,17 @@
   z-index: 4999;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0);
   transition: all .3s;
 }
 
 .op-show {
-  .op-mask {
-    opacity: 1;
-    visibility: visible;
-  }
   .op-half-screen--keyboard {
     transform: translateY(0);
   }
 }
 
 .op-hidden {
-  .op-mask {
-    opacity: 0;
-    visibility: hidden;
-  }
   .op-half-screen--keyboard {
     transform: translateY(100%);
   }
@@ -35,7 +27,6 @@
   left: 0;
   z-index: 5000;
   width: 100%;
-  // min-height: 50%;
   max-height: 75%;
   background: #F2F3F5;
   overflow: hidden;
@@ -43,6 +34,7 @@
   border-top-right-radius: 12px;
   line-height: 1.4;
   transition: all .3s;
+  box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
   .op-half-screen--keyboard-hd {
     position: relative;
     height: 3.5em;

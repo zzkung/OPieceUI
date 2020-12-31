@@ -1,16 +1,17 @@
-<!-- <view class="{{ show ? 'op-show' :'op-hidden' }}"> -->
-<view class="op-show">
-  <view class="op-mask" data-type="tap" catch:touchmove="onMaskMouseMove" bindtap="close"></view>
+<view class="{{ show ? 'op-show' :'op-hidden' }}">
+<!-- <view class="op-show"> -->
   <view class="op-half-screen--keyboard">
     <view class="op-half-screen--keyboard-hd {{ borderLine ? 'border-line' : '' }}">
       <view wx:if="{{ title }}" class="op-keyboard--title">{{ title }}</view>
-      <view wx:if="{{ closeButtonText }}" class="op-keyboard--close position-{{ closeButtonPosition }}">{{ closeButtonText }}</view>
+      <view wx:if="{{ closeButtonText }}" class="op-keyboard--close position-{{ closeButtonPosition }}" data-type="button" bindtap="close">{{ closeButtonText }}</view>
     </view>
     <view class="op-half-screen--keyboard-bd">
       <view 
         wx:for="{{keyboardArray}}" 
         wx:key="index"
         class="op-keyboard--item"
+        data-value="{{item}}"
+        bindtap="handleInput"
       >
         {{item}}
       </view>

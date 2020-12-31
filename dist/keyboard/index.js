@@ -29,7 +29,8 @@ Component({
   },
   data: {
     keyboardArray: [],
-    cartPlateType: 'chinese' // chinese, letter
+    cartPlateType: 'chinese', // chinese, letter
+    inputValue: ''
   },
   ready () {
     this.init()
@@ -50,6 +51,14 @@ Component({
           break;
       }
     },
+    handleInput (e) {
+      let value = e.currentTarget.dataset.value
+      let { inputValue } = this.data
+      this.setData({
+        inputValue: inputValue + value
+      })
+      console.log(this.data.inputValue)
+    },
     handleSwitchKeyboard () {
       let { cartPlateType } = this.data
       this.setData({
@@ -60,10 +69,12 @@ Component({
         })
       })
     },
-    close () {
+    close (e) {
+      let type = e.currentTarget.dataset.type
       this.setData({
         show: false
       })
+      this.triggerEvent('close', type)
     }
   }
 })
