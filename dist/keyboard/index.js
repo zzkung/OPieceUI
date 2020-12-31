@@ -30,7 +30,6 @@ Component({
   data: {
     keyboardArray: [],
     cartPlateType: 'chinese', // chinese, letter
-    inputValue: ''
   },
   ready () {
     this.init()
@@ -53,21 +52,16 @@ Component({
     },
     handleInput (e) {
       let value = e.currentTarget.dataset.value
-      let { inputValue } = this.data
-      this.setData({
-        inputValue: inputValue + value
-      })
-      console.log(this.data.inputValue)
+      this.triggerEvent('input', { value })
     },
     handleSwitchKeyboard () {
       let { cartPlateType } = this.data
       this.setData({
-        keyboardArray: cartPlateType == 'chinese' ? KEYBOARD_TYPE.english : KEYBOARD_TYPE.cartPlate
-      }, () => {
-        this.setData({
-          cartPlateType: cartPlateType == 'chinese' ? 'letter' : 'chinese'
-        })
+        keyboardArray: cartPlateType == 'chinese' ? KEYBOARD_TYPE.english : KEYBOARD_TYPE.cartPlate,cartPlateType: cartPlateType == 'chinese' ? 'letter' : 'chinese'
       })
+    },
+    handleBackspace () {
+      this.triggerEvent('backspace')
     },
     close (e) {
       let type = e.currentTarget.dataset.type

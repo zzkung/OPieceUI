@@ -98,6 +98,6 @@
 .op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item.keyboard-special.keyboard-switch {
   left: 16rpx;
 }
-.op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item.keyboard-special.keyboard-close {
+.op-half-screen--keyboard .op-half-screen--keyboard-bd .op-keyboard--item.keyboard-special.keyboard-backspace {
   right: 16rpx;
 }

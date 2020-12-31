@@ -16,7 +16,7 @@
         {{item}}
       </view>
       <view class="op-keyboard--item keyboard-special keyboard-switch" bindtap="handleSwitchKeyboard">中/英</view>
-      <view class="op-keyboard--item keyboard-special keyboard-close">关闭</view>
+      <view class="op-keyboard--item keyboard-special keyboard-backspace" bindtap="handleBackspace">退格</view>
     </view>
   </view>
 </view>

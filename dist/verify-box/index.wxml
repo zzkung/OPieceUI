@@ -1,11 +1,13 @@
 <view>
   <view class="op-verify--box">
     <view class="op-verify--item"
-      wx:for="{{length}}" 
+      wx:for="{{ length }}" 
       wx:key="index"
+      data-index="{{ index }}"
+      bindtap="handleFocus"
     >
-      <text></text>
-      <view class="op-verify--cursor" hidden="{{index!=0}}"></view>
+      <text>{{value[index]}}</text>
+      <view class="op-verify--cursor" hidden="{{ cursorIndex != index }}"></view>
     </view>
   </view>
 </view>
