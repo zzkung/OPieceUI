@@ -1,3 +1,6 @@
+function isDef(value) {
+  return value !== undefined && value !== null
+}
 /**
  * @desc 动态样式单位
  */
@@ -10,5 +13,6 @@ function addUtil(value) {
 }
 
 module.exports = {
+  isDef: isDef,
   addUtil: addUtil
 }

@@ -1,6 +1,17 @@
 <demo-header title="P&VCode 密码和验证码输入框" sub-title="使用一套特定的调色板来规定颜色，为你所搭建的产品提供一致的外观视觉感受" />
 
 <view class="op-padding-bottom--30">
+  <demo-block title="中划线">
+    <view class="op-padding-lr--30">
+      <op-verify-box layout="inline" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
+    </view>
+  </demo-block>
+
+  <demo-block title="下划线">
+    <view class="op-padding-lr--30">
+      <op-verify-box layout="underline" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
+    </view>
+  </demo-block>
   <demo-block title="网格布局">
     <view class="op-padding-lr--30">
       <op-verify-box length="4" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
@@ -13,17 +24,7 @@
     </view>
   </demo-block>
 
-  <demo-block title="中划线">
-    <view class="op-padding-lr--30">
-      <op-verify-box layout="inLine" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
-    </view>
-  </demo-block>
-
-  <demo-block title="下划线">
-    <view class="op-padding-lr--30">
-      <op-verify-box layout="underline" cursor-index="{{cursorIndex}}" value="{{verifyValue}}" bindfocus="verifyFocus" />
-    </view>
-  </demo-block>
+  
 </view>
 
 <view class="btn-switch" bindtap="showScreenDialog">

@@ -11,7 +11,8 @@
   background: var(--bg-base);
 }
 .op-verify--box.op-layout--box .op-verify--item,
-.op-verify--box.op-layout--inLine .op-verify--item {
+.op-verify--box.op-layout--inline .op-verify--item,
+.op-verify--box.op-layout--underline .op-verify--item {
   background: transparent;
 }
 .op-verify--box .op-verify--item::after {
@@ -32,8 +33,31 @@
   border: 1px solid #dcdfe6;
   border-right-width: 0;
 }
-.op-verify--box.op-layout--box .op-verify--item:last-child::after {
-  border-right-width: 1px;
+.op-verify--box.op-layout--inline .op-verify--item-line::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rpx;
+  height: 2px;
+  border-radius: 8rpx;
+  background: #606266;
+  transform: translate(-50%, -50%);
+}
+.op-verify--box.op-layout--underline .op-verify--item::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 40rpx;
+  height: 2px;
+  border-radius: 8rpx;
+  background: #606266;
+  transform: translate(-50%, -100%);
+}
+.op-verify--box.op-layout--underline .op-verify--item-activeline::after {
+  content: ' ';
+  animation: 1s cursor-flicker infinite;
 }
 .op-verify--box .op-verify--cursor {
   position: absolute;
@@ -45,6 +69,14 @@
   background: #606266;
   transform: translate(-50%, -50%);
   animation: 1s cursor-flicker infinite;
+}
+.op-verify--box.op-layout--inline .op-verify--cursor {
+  width: 40rpx;
+  height: 2px;
+  background: #409EFF;
+}
+.op-verify--box.op-layout--underline .op-verify--cursor {
+  background: #409EFF;
 }
 @keyframes cursor-flicker {
   0% {
