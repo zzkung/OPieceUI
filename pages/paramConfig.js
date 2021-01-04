@@ -24,13 +24,22 @@ export default {
       ]
     }
   ],
-  pv_inputParam: [{
+  pv_inputParam: [
+    {
       title: '输入长度',
       remark: '最长支持8个长度',
       items: [
-        { name: '4', checked: true },
-        { name: '5' },
+        { name: '4' },
+        { name: '5', checked: true },
         { name: '6' }
+      ]
+    }, {
+      title: '初始值',
+      remark: '',
+      items: [
+        { name: '空', checked: true },
+        { name: '23' },
+        { name: '789' }
       ]
     }
   ]

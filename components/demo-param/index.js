@@ -9,6 +9,10 @@ Component({
     params: { type:Object, value: null }
   },
   methods: {
+    paramInit (e) {
+      let { value } = e.detail
+      this.triggerEvent('paraminit', { value })
+    },
     radioChange (e) {
       let value = e.detail.value
       this.triggerEvent('radiochange', { value })

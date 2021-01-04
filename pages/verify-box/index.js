@@ -6,16 +6,13 @@ Page({
   data: {
     showParam: false,
     params: paramConfig.pv_inputParam,
-    paramCheckeds: [0],
+    paramCheckeds: [],
     showKeyboard: false,
-    verifyValue: '',
-    cursorIndex: 0
+    verifyValue: ''
   },
-  verifyFocus (e) {
-    let { index } = e.detail
+  verifyFocus () {
     this.setData({
-      showKeyboard: true,
-      cursorIndex: index
+      showKeyboard: true
     })
   },
   keyboardInput (e) {
@@ -31,7 +28,22 @@ Page({
       verifyValue: verifyValue.substring(0, verifyValue.length - 1)
     })
   },
+  paramInit (e) {
+    let { params } = this.data
+    let { value } = e.detail
+    let verifyValue = params[1].items[value[1]].name
+    this.setData({
+      paramCheckeds: value,
+      verifyValue: verifyValue == '空' ? '' : verifyValue
+    })
+  },
   radioChange (e) {
     console.log(e)
+    let { value } = e.detail
+    let { paramCheckeds } = this.data
+    paramCheckeds[value[0]] = value[1]
+    this.setData({
+      paramCheckeds
+    })
   }
 })

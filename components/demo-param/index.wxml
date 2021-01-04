@@ -7,6 +7,6 @@
 >
   <view slot="title">参数配置</view>
   <view slot="desc">
-    <demo-param-item params="{{params}}" bindradiochange="radioChange" />
+    <demo-param-item params="{{params}}" bindparaminit="paramInit" bindradiochange="radioChange" />
   </view>
 </mp-half-screen-dialog>
