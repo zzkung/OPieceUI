@@ -42,6 +42,10 @@ Page({
     let { value } = e.detail
     let { paramCheckeds } = this.data
     paramCheckeds[value[0]] = value[1]
+    if (value[0] == 1) {
+      // **********************
+      // 设置初始值
+    }
     this.setData({
       paramCheckeds
     })
