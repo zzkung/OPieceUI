@@ -1,0 +1,27 @@
+{
+  "name": "opieceui",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img alt=\"logo\" src=\"https://blog.zzkung.com/AppImg/OPieceImg/logo.png\" width=\"120\" style=\"margin-bottom: 10px;\">\r </p>\r <h3 align=\"center\">OPiece小程序 UI 组件库</h3>",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs/opui_docs",
+    "docs:build": "vuepress build docs/opui_docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzkung/jMeiiUI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzkung/jMeiiUI/issues"
+  },
+  "homepage": "https://github.com/zzkung/jMeiiUI#readme",
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
