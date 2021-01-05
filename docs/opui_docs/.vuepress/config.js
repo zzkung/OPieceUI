@@ -14,6 +14,8 @@ module.exports = {
     nav: [
       { text: '指南', link: '/guide/' },
       { text: '组件', link: '/component/' },
+      { text: '工具', link: '/tool/' },
+      { text: '通用模板', link: '/normal-temp/' },
       {
         text: '关于',
         items: [
@@ -31,6 +33,12 @@ module.exports = {
       '/component/': [
         'button',
         'icon'
+      ],
+      '/tool/': [
+        'auth'
+      ],
+      '/normal-temp/': [
+        'signature'
       ],
     }
   },
