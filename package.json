@@ -8,19 +8,19 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs/opui_docs",
+    "docs:dev": "vuepress dev docs/opui_docs --open",
     "docs:build": "vuepress build docs/opui_docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zzkung/jMeiiUI.git"
+    "url": "git+https://github.com/zzkung/OPieceUI.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zzkung/jMeiiUI/issues"
+    "url": "https://github.com/zzkung/OPieceUI/issues"
   },
-  "homepage": "https://github.com/zzkung/jMeiiUI#readme",
+  "homepage": "https://github.com/zzkung/OPieceUI#readme",
   "devDependencies": {
     "vuepress": "^1.7.1"
   }
