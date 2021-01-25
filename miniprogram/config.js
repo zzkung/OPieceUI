@@ -33,6 +33,18 @@ export default [
         title: 'vtabs 纵向选项卡',
         icon: '',
         remark: ''
+      },
+      {
+        path: '/verify-box',
+        title: '密码/验证码输入',
+        icon: '',
+        remark: ''
+      },
+      {
+        path: '/keyboard',
+        title: 'Keyboard 键盘',
+        icon: '',
+        remark: ''
       }
     ],
   },
@@ -60,6 +72,18 @@ export default [
       }, {
         path: '/signature-temp',
         title: 'Signature 电子签名',
+        icon: '',
+        remark: ''
+      }
+    ],
+  },
+  {
+    groupName: '其他',
+    icon: '',
+    list: [
+      {
+        path: '/github',
+        title: 'GitHub',
         icon: '',
         remark: ''
       }

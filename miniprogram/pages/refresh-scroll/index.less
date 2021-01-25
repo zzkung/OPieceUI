@@ -1,0 +1,41 @@
+.cells {
+  background: var(--white);
+  margin-top: 20rpx;
+  .cell {
+    display: flex;
+    padding: 20rpx;
+    &:not(:last-child) {
+      border-bottom: 1rpx solid #ebedf0;
+    }
+    .cell__hd {
+      font-size: 0;
+      image {
+        width: 160rpx;
+        height: 160rpx;
+        margin-right: 20rpx;
+        border-radius: 12rpx;
+      }
+    }
+    .cell__bd {
+      flex: 1;
+      .name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        word-break: break-all;
+        font-size: 28rpx;
+        margin-bottom: 12rpx;
+      }
+      .des {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        word-break: break-all;
+        color: #666666;
+        font-size: 24rpx;
+      }
+    }
+  }
+}

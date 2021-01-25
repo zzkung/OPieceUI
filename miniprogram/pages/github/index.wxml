@@ -1,0 +1,19 @@
+<view>
+  <view class="list-item op-flex op-align--center op-padding--20 op-margin--20" wx:for="{{userList}}" wx:key="index">
+    <view class="item-cover">
+      <image src="{{item.avatar_url}}" lazy-load></image>
+    </view>
+    <view class="op-flex--sub op-flex op-align--center op-margin-left--20">
+      <view class="op-margin-right--20 op-flex--sub">
+        <view class="op-text--38">{{item.login}}</view>
+        <view class="op-text--secondary">
+          <text class="opIcon opIcon-attention op-text--34 op-margin-right--5"></text>
+          <text>{{item.url}}</text>
+        </view>
+      </view>
+      <view>
+        <button class="op-init--btn attention-btn" size="mini" plain type="primary">关注</button>
+      </view>
+    </view>
+  </view>
+</view>

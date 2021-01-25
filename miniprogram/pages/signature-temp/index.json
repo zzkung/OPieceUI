@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "op-signature": "../../dist/signature"
+  },
+  "pageOrientation": "auto"
 }

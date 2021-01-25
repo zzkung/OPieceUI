@@ -3,46 +3,36 @@
   width: 100%;
   padding: 46px 20px 0;
 }
-
-.demo-header__title,
-.demo-header__desc {
+.demo-header .demo-header__title {
+  margin: 0 0 16px;
+  font-size: 32px;
   padding-left: 16px;
   font-weight: normal;
   line-height: 1.4;
   user-select: none;
 }
-
-.demo-header__title {
-  margin: 0 0 16px;
-  font-size: 32px;
-}
-
-.demo-header__image,
-.demo-header__text {
+.demo-header .demo-header__title .demo-header__image,
+.demo-header .demo-header__title .demo-header__text {
   display: inline-block;
   vertical-align: middle;
 }
-
-.demo-header__image {
+.demo-header .demo-header__title .demo-header__image {
   width: 32px;
   height: 32px;
   margin-right: 16px;
 }
-
-.demo-header__text {
+.demo-header .demo-header__title .demo-header__text {
   font-weight: 500;
 }
-
-.demo-header__title .demo-header--small {
-  font-size: 24px;
+.demo-header .demo-header__title .demo-header__text .custom-font {
+  font-family: "CustomFont";
 }
-
-.demo-header__desc {
+.demo-header .demo-header__desc {
+  padding-left: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+  user-select: none;
   margin: 0 0 40px;
   color: rgba(69, 90, 100, 0.6);
   font-size: 12px;
-}
-
-.custom-font {
-  font-family: "CustomFont";
 }

@@ -1,0 +1,12 @@
+<wxs src="../utils/util.wxs" module="util" />
+<view class="op-verify--box op-layout--{{layout}}">
+  <view class="op-verify--item {{ !util.isDef(value[index]) ? (cursorIndex != index ? 'op-verify--item-line' : 'op-verify--item-activeline') : '' }}"
+    wx:for="{{ length }}" 
+    wx:key="index"
+    data-index="{{ index }}"
+    bindtap="handleFocus"
+  >
+    <text>{{ value[index] }}</text>
+    <view class="op-verify--cursor" hidden="{{ cursorIndex != index }}"></view>
+  </view>
+</view>

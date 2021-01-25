@@ -5,9 +5,12 @@
     "pages/icon/index",
     "pages/refresh-scroll/index",
     "pages/vtabs/index",
+    "pages/verify-box/index",
+    "pages/keyboard/index",
     "pages/auth/index",
     "pages/category-temp/index",
     "pages/signature-temp/index",
+    "pages/github/index",
     "pages/copyright/index",
     "pages/about/index"
   ],
@@ -18,11 +21,9 @@
     "navigationBarTextStyle":"black"
   },
   "usingComponents": {
-    "mp-half-screen-dialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog",
     "demo-header": "./components/demo-header/index",
     "demo-block": "./components/demo-block/index",
     "demo-param": "./components/demo-param/index",
-    "demo-param-item": "./components/demo-param-item/index",
     "refresh-scroll": "./dist/refresh-scroll/index"
   },
   "useExtendedLib": {

@@ -27,17 +27,8 @@
   </refresh-scroll>
 </demo-block>
 
-<view class="btn-switch" bindtap="showScreenDialog"></view>
+<view class="btn-switch" bindtap="showScreenDialog">
+  <text class="opIcon opIcon-setup op-text--56 op-color--success"></text>
+</view>
 
-<mp-half-screen-dialog 
-  extClass="half-screen-dialog"
-  show="{{showParam}}"
-  mask="{{true}}"
-  closabled="{{false}}"
-  maskClosable="{{true}}" 
->
-  <view slot="title">参数配置</view>
-  <view slot="desc">
-    <demo-param-item params="{{params}}" bindradiochange="radioChange"></demo-param-item>
-  </view>
-</mp-half-screen-dialog>
+<demo-param show-param="{{showParam}}" params="{{params}}" bindradiochange="radioChange" />

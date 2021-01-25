@@ -4,7 +4,6 @@
   min-height: 100vh;
   background: #fff;
 }
-
-.demo-home__content {
+.demo-home .demo-home__content {
   padding: 0 20px 20px;
 }

@@ -3,30 +3,23 @@
   line-height: 80rpx;
   background: var(--white);
 }
-
 .tab-box {
-  height: calc(100vh - 90rpx)!important;
+  height: calc(100vh - 90rpx) !important;
   margin-top: 10rpx;
 }
-
-.banner-box {
+.tab-box .banner-box {
   height: 200rpx;
 }
-.banner-box image {
+.tab-box .banner-box image {
   border-radius: 12rpx;
   overflow: hidden;
 }
-
-.data-item {
+.tab-box .data-item {
   display: inline-block;
   width: calc((100vw - 110px - 40rpx) / 3);
   height: 200rpx;
 }
-.data-item--cover {
+.tab-box .data-item .data-item--cover {
   width: 140rpx;
   height: 140rpx;
-}
-
-.vtabs-content__scrollview {
-  background: #fff;
 }

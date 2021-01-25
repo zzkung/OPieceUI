@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "vtabs 纵向选项卡",
   "usingComponents": {
-    "vtabs": "../../dist/vtabs/index",
-    "vtabs-content": "../../dist/vtabs-content/index"
+    "op-vtabs": "../../dist/vtabs/index",
+    "op-vtabs-content": "../../dist/vtabs-content/index"
   }
 }

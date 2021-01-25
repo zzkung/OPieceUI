@@ -1,5 +1,5 @@
 <view class="demo-home">
-  <demo-header title="OPiece UI" sub-title="OPiece小程序 UI 组件库" icon="{{imghttp}}/logo.png" custom-font />
+  <demo-header title="OPiece UI" sub-title="OPiece UI 小程序组件库" icon="{{imghttp}}/logo.png" custom-font />
   <view class="demo-home__content">
     <view
       wx:for="{{ list }}"

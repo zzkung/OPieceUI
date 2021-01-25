@@ -1,0 +1,15 @@
+<view class="signature-container">
+  <canvas type="2d"
+    class="canvas-area" 
+    id="signatureCanvas"
+    disable-scroll="{{true}}"
+    bindtouchstart="handleTouchStart"
+    bindtouchmove="handleTouchMove"
+    bindtouchend="handleTouchEnd"
+  >
+  </canvas>
+</view>
+<view class="action-bar">
+  <button type="warn" plain bindtap="handleClear">清除</button>
+  <button type="primary" bindtap="handleSubmit">保存</button>
+</view>

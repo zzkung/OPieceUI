@@ -3,7 +3,7 @@
 </view>
 
 <!-- 组件 START -->
-<vtabs tab-class="tab-box"
+<op-vtabs tab-class="tab-box"
   vtabs="{{vtabs}}"
   activeTab="{{activeTab}}"
   bindtabclick="onTabCLick" 
@@ -11,7 +11,7 @@
 >
   <!-- 左右联动 START -->
   <block wx:if="{{paramCheckeds[0] == 0}}" wx:for="{{vtabs}}" wx:for-item="vtabItem" wx:for-index="vtabindex" wx:key="title">
-    <vtabs-content tabIndex="{{vtabindex}}">
+    <op-vtabs-content tabIndex="{{vtabindex}}">
       <view class="op-padding--20">
         <swiper class="op-margin-bottom--30 banner-box"
           wx:if="{{vtabItem.banner.length>0}}"
@@ -44,13 +44,13 @@
           </view>
         </view>
       </view>
-    </vtabs-content>
+    </op-vtabs-content>
   </block>
   <!-- 左右联动 END -->
 
   <!-- 相互独立有bug，需要修改 -->
   <!-- 相互独立 START -->
-  <vtabs-content wx:if="{{paramCheckeds[0] == 1}}" tabIndex="{{activeTab}}">
+  <op-vtabs-content wx:if="{{paramCheckeds[0] == 1}}" tabIndex="{{activeTab}}">
     <view class="op-padding--20" style="min-height:100%;">
       <swiper class="op-margin-bottom--30 banner-box"
         wx:if="{{vtabs[activeTab].banner.length>0}}"
@@ -83,20 +83,9 @@
         </view>
       </view>
     </view>
-  </vtabs-content>
+  </op-vtabs-content>
   <!-- 相互独立 END -->
-</vtabs>
+</op-vtabs>
 <!-- 组件 END -->
 
-<mp-half-screen-dialog 
-  extClass="half-screen-dialog"
-  show="{{showParam}}"
-  mask="{{true}}"
-  closabled="{{false}}"
-  maskClosable="{{true}}" 
->
-  <view slot="title">参数配置</view>
-  <view slot="desc">
-    <demo-param-item params="{{params}}" bindradiochange="radioChange"></demo-param-item>
-  </view>
-</mp-half-screen-dialog>
+<demo-param show-param="{{showParam}}" params="{{params}}" bindradiochange="radioChange" />

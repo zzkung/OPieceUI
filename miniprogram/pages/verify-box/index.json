@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "op-verify-box": "../../dist/verify-box",
+    "op-keyboard": "../../dist/keyboard"
+  }
+}

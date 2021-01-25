@@ -1,0 +1,22 @@
+<view class="{{ show ? 'op-show' :'op-hidden' }}">
+<!-- <view class="op-show"> -->
+  <view class="op-half-screen--keyboard">
+    <view class="op-half-screen--keyboard-hd {{ borderLine ? 'border-line' : '' }}">
+      <view wx:if="{{ title }}" class="op-keyboard--title">{{ title }}</view>
+      <view wx:if="{{ closeButtonText }}" class="op-keyboard--close position-{{ closeButtonPosition }}" data-type="button" bindtap="close">{{ closeButtonText }}</view>
+    </view>
+    <view class="op-half-screen--keyboard-bd">
+      <view 
+        wx:for="{{keyboardArray}}" 
+        wx:key="index"
+        class="op-keyboard--item"
+        data-value="{{item}}"
+        bindtap="handleInput"
+      >
+        {{item}}
+      </view>
+      <view class="op-keyboard--item keyboard-special keyboard-switch" bindtap="handleSwitchKeyboard">中/英</view>
+      <view class="op-keyboard--item keyboard-special keyboard-backspace" bindtap="handleBackspace">退格</view>
+    </view>
+  </view>
+</view>

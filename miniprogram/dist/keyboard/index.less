@@ -1,0 +1,111 @@
+.op-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: all .3s;
+}
+
+.op-show {
+  .op-half-screen--keyboard {
+    transform: translateY(0);
+  }
+}
+
+.op-hidden {
+  .op-half-screen--keyboard {
+    transform: translateY(100%);
+  }
+}
+
+.op-half-screen--keyboard {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100%;
+  max-height: 75%;
+  background: #F2F3F5;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  line-height: 1.4;
+  transition: all .3s;
+  box-shadow: 0 -2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
+  .op-half-screen--keyboard-hd {
+    position: relative;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .op-keyboard--title {
+      font-size: 32rpx;
+      font-weight: bold;
+      max-width: 480rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &.border-line::after {
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      box-sizing: border-box;
+      // border-bottom: 1px solid #ebedf0;
+      border-bottom: 1px solid #d6d6d6;
+      content: " ";
+      transform: scale(.5);
+      transform-origin: center;
+      pointer-events: none;
+    }
+    .op-keyboard--close {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 28rpx;
+      padding: 0 32rpx;
+      color: #409EFF;
+      &.position-left {
+        left: 10rpx;
+      }
+      &.position-right {
+        right: 10rpx;
+      }
+    }
+  }
+  .op-half-screen--keyboard-bd {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 30rpx 10rpx;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .op-keyboard--item {
+      width: 79rpx;
+      padding: 8rpx 10rpx;
+      margin: 6rpx;
+      border-radius: 10rpx;
+      text-align: center;
+      background: #fff;
+      &.keyboard-special {
+        position: absolute;
+        bottom: 30rpx;
+        width: 170rpx;
+        &.keyboard-switch {
+          left: 16rpx;
+        }
+        &.keyboard-backspace {
+          right: 16rpx;
+        }
+      }
+    } 
+  }
+}

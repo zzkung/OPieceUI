@@ -1,4 +1,12 @@
-<view class="custom-class demo-param {{ padding ? 'demo-param--padding' : '' }}">
-  <view wx:if="{{ title }}" class="demo-param__title">{{ title }}</view>
-  <slot />
-</view>
+<mp-half-screen-dialog
+  extClass="half-screen-dialog"
+  show="{{showParam}}"
+  mask="{{true}}"
+  closabled="{{false}}"
+  maskClosable="{{true}}"  
+>
+  <view slot="title">参数配置</view>
+  <view slot="desc">
+    <demo-param-item params="{{params}}" bindparaminit="paramInit" bindradiochange="radioChange" />
+  </view>
+</mp-half-screen-dialog>
