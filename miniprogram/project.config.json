@@ -3,12 +3,12 @@
   "packOptions": {
     "ignore": [
       {
-        "value": "sourse",
-        "type": "folder"
+        "type": "folder",
+        "value": "sourse"
       },
       {
-        "value": "docs",
-        "type": "folder"
+        "type": "folder",
+        "value": "docs"
       }
     ]
   },
@@ -32,11 +32,13 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
@@ -44,21 +46,20 @@
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "useApiHostProcess": true
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
   "appid": "wxa1afff41f4458cd3",
   "projectname": "OPiece%20UI",
-  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-  "watchOptions": {
-    "ignore": []
-  },
   "debugOptions": {
     "hidedInDevtools": []
   },
   "scripts": {},
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "plugin": {
       "list": []
@@ -110,7 +111,6 @@
         {
           "name": "电子签名",
           "pathName": "pages/signature-temp/index",
-          "query": "",
           "scene": null
         },
         {
