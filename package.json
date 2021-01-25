@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "preview-code": "node CI.js",
+    "inquirer": "node inquirer.js",
     "docs:dev": "vuepress dev docs/opui_docs --no-cache",
     "docs:build": "vuepress build docs/opui_docs"
   },
@@ -23,5 +25,9 @@
   "homepage": "https://github.com/zzkung/OPieceUI#readme",
   "devDependencies": {
     "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "miniprogram-ci": "^1.0.94"
   }
 }
